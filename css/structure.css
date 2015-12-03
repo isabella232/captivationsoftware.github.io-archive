@@ -126,14 +126,14 @@ p {
   float: left;
   width: 187.5px;
   height: 30px;
-  margin-left: 10px;
+  margin-left: 20px;
   background-size: 187.5px 30px;
 }
 
 .footer .copyright {
   float: right;
   font-size: 11px;
-  margin-right: 10px;
+  margin-right: 20px;
   line-height: 30px;
 }
 

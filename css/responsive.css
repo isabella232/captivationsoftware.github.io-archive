@@ -48,6 +48,7 @@
     height: 25px;
     background-size: 156px 25px;
     background-image: url('../images/logo-light-small.png');
+    margin-left: 0;
   }
 
   .footer .title {
