@@ -23,9 +23,3 @@
     display: none;
   }
 }
-
-@media (min-height: 700px) {
-  img.icon {
-    margin: 60px auto;
-  }
-}
