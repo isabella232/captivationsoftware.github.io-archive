@@ -19,7 +19,7 @@
       loopHorizontal: false,
       controlArrows: false,
       verticalCentered: false,
-      responsiveWidth: 700,
+      responsiveWidth: 768,
       responsiveHeight: 700
     });
 
