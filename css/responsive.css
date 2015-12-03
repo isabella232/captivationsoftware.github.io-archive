@@ -25,10 +25,6 @@
 }
 
 @media (min-height: 700px) {
-  .hero {
-    margin-top: 30px;
-  }
-
   img.icon {
     margin: 60px auto;
   }
