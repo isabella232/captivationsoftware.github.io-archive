@@ -143,3 +143,7 @@ p {
   font-weight: 700;
   line-height: 25px;
 }
+
+.footer .glyphicon {
+  top: 0;
+}
