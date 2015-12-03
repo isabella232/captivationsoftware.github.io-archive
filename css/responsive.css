@@ -64,8 +64,4 @@
     width: 100% !important;
   }
 
-  .main.container {
-    min-height: auto;
-    padding-bottom: 120px;
-  }
 }
