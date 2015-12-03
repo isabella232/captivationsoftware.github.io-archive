@@ -12,8 +12,9 @@
 }
 
 @media (max-width: 768px) {
-  .main.container {
-    min-height: auto;
+  /* Override fullpage.js height calculations */
+  .fp-responsive .fp-section {
+    height: auto !important;
   }
 
   h1 {
