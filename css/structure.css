@@ -32,7 +32,11 @@ h1 {
   padding-bottom: 120px;
 }
 
-.btn {
+.btn,
+.btn:link,
+.btn:visited,
+.btn:active,
+.btn:hover {
   border: solid 3px;
   border-radius: 0;
   padding: 15px;
@@ -40,6 +44,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   margin: 10px 0;
+  box-shadow: none;
 }
 
 .glyphicon {
