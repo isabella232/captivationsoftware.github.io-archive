@@ -10,6 +10,12 @@
   height: auto !important;
 }
 
+@media (min-width: 769px) {
+  .footer .title {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 24px;
@@ -22,30 +28,38 @@
   .menu ul li a .text {
     display: none;
   }
-}
 
-@media (max-width: 700px) {
+  .glyphicon-chevron-up,
+  .glyphicon-chevron-down,
+  .copyright {
+    display: none;
+  }
+
   .footer {
-    position: relative;
     bottom: 0;
-    text-align: center;
-    height: 80px;
+    padding: 30px;
+    background-color: #2F2F2F;
   }
 
-  .footer .brand {
-    display: inline-block;
-    float: none;
-    margin: 0;
+  .dark-bg .footer .brand,
+  .light-bg .footer .brand,
+  .black-bg .footer .brand {
+    width: 156px;
+    height: 25px;
+    background-size: 156px 25px;
+    background-image: url('../images/logo-light-small.png');
   }
 
-  .footer .copyright {
-    display: block;
-    float: none;
-    margin: 0;
-    line-height: 40px;
+  .footer .title {
+    display: inline;
+    color: #FFB718;
   }
 
-  .glyphicon-chevron-up {
-    top: calc(100% - 130px)
+  .fp-slidesContainer {
+    width: 100% !important;
+  }
+
+  .fp-slide {
+    width: 100% !important;
   }
 }

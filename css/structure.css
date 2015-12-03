@@ -116,7 +116,7 @@ p {
 
 .footer {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   left: 0;
   right: 0;
   line-height: 100%;
@@ -127,6 +127,7 @@ p {
   width: 187.5px;
   height: 30px;
   margin-left: 10px;
+  background-size: 187.5px 30px;
 }
 
 .footer .copyright {
@@ -134,4 +135,11 @@ p {
   font-size: 11px;
   margin-right: 10px;
   line-height: 30px;
+}
+
+.footer .title {
+  float: right;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
 }
