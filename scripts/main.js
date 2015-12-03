@@ -14,11 +14,11 @@
 
     // Initialize fullpage.js
     $('#fullpage').fullpage({
-      anchors: ['', 'our-difference', 'solutions', 'capabilities', 'careers', 'contact'],
+      anchors: ['', 'choose-us', 'solutions', 'capabilities', 'careers', 'contact'],
       menu: '.menu',
       loopHorizontal: false,
       controlArrows: false,
-      verticalCentered: false,
+      verticalCentered: true,
       responsiveWidth: 768,
       responsiveHeight: 700
     });
