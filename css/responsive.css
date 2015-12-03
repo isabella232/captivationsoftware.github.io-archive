@@ -23,3 +23,29 @@
     display: none;
   }
 }
+
+@media (max-width: 700px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    height: 80px;
+  }
+
+  .footer .brand {
+    display: inline-block;
+    float: none;
+    margin: 0;
+  }
+
+  .footer .copyright {
+    display: block;
+    float: none;
+    margin: 0;
+    line-height: 40px;
+  }
+
+  .glyphicon-chevron-up {
+    top: calc(100% - 130px)
+  }
+}

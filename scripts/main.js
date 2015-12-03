@@ -35,5 +35,12 @@
       $.fn.fullpage.moveSectionDown();
     });
 
+    $('.glyphicon-chevron-up').on('click', function() {
+      $.fn.fullpage.moveTo('', 0);
+    });
+
+    // Set Copyright to the current year
+    $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software');
+
   });
 })(jQuery);

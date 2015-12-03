@@ -27,9 +27,9 @@ h1 {
   font-weight: 800;
 }
 
-.container {
+.main.container {
   min-height: 600px;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
 }
 
 .btn,
@@ -52,7 +52,7 @@ h1 {
   position: absolute;
 }
 
-.glyphicon-chevron-down {
+.glyphicon-chevron-down, .glyphicon-chevron-up {
   top: calc(100% - 80px);
   left: calc(50% - 15px);
   text-align: center;
@@ -60,12 +60,13 @@ h1 {
   z-index: 1;
 }
 
-.glyphicon-chevron-left {
-  left: 60px;
-}
 
-.glyphicon-chevron-right {
-  right: 60px;
+.glyphicon-chevron-up::after {
+  content: "BACK TO TOP";
+  font-family: "Proxima Nova";
+  font-size: 8px;
+  font-weight: 600;
+  display: block;
 }
 
 .menu {
@@ -101,13 +102,36 @@ h1 {
 
 .menu ul li a .circle {
   display: inline-block;
-  height: 12px;
-  width: 12px;
-  border-radius: 12px;
+  height: 13px;
+  width: 13px;
+  border-radius: 13px;
   margin-left: 10px;
+  margin-bottom: -1px;
 }
 
 p {
   font-size: 24px;
   padding: 10px 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  line-height: 100%;
+}
+
+.footer .brand {
+  float: left;
+  width: 187.5px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.footer .copyright {
+  float: right;
+  font-size: 11px;
+  margin-right: 10px;
+  line-height: 30px;
 }

@@ -57,11 +57,9 @@
   color: #333333;
 }
 
-.light-bg .glyphicon,
 .light-bg h1,
 .light-bg .btn,
 .light-bg .menu ul li.active a,
-.dark-bg .glyphicon,
 .dark-bg h1,
 .dark-bg .btn,
 .dark-bg .menu ul li.active a {
@@ -75,10 +73,14 @@
   background-color: #FFB718;
 }
 
-
 .dark-bg .menu ul li a .circle,
 .light-bg .menu ul li a .circle {
   background-color: #333333;
+}
+
+.dark-bg .glyphicon,
+.light-bg .glyphicon {
+  color: #333333;
 }
 
 .dark-bg .menu ul li.active a .circle,
