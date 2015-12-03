@@ -5,11 +5,6 @@
   }
 }
 
-/* Override fullpage.js height calculations */
-.fp-responsive .fp-section {
-  height: auto !important;
-}
-
 @media (min-width: 769px) {
   .footer .title {
     display: none;
@@ -17,6 +12,10 @@
 }
 
 @media (max-width: 768px) {
+  .main.container {
+    min-height: auto;
+  }
+
   h1 {
     font-size: 24px;
   }
