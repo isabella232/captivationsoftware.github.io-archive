@@ -1,0 +1,96 @@
+.orange {
+  color: #E97200;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+/* Black Theme */
+.black-bg {
+  background-color: #333333;
+}
+
+.black-bg .glyphicon {
+  color: #FFB718;
+}
+
+.black-bg .menu ul li a {
+  color: #FFFFFF;
+}
+
+.black-bg h1,
+.black-bg .btn,
+.black-bg .menu ul li.active a {
+  color: #FFB718;
+}
+
+.black-bg .btn:hover {
+  color: #FFFFFF;
+  border-color: #FFB718;
+  background-color: #FFB718;
+}
+
+.black-bg .menu ul li a .circle {
+  background-color: #FFFFFF;
+}
+
+.black-bg .menu ul li.active a .circle {
+  background-color: #FFB718;
+}
+
+.black-bg p {
+  color: #EEEEEE;
+}
+
+/* Gray Themes */
+.dark-bg {
+  background-color: #E3E3E3;
+}
+
+.light-bg {
+  background-color: #EEEEEE;
+}
+
+.light-bg .menu ul li a,
+.dark-bg .menu ul li a {
+  color: #333333;
+}
+
+.light-bg .glyphicon,
+.light-bg h1,
+.light-bg .btn,
+.light-bg .menu ul li.active a,
+.dark-bg .glyphicon,
+.dark-bg h1,
+.dark-bg .btn,
+.dark-bg .menu ul li.active a {
+  color: #FFB718;
+}
+
+.dark-bg .btn:hover,
+.light-bg .btn:hover {
+  color: #FFFFFF;
+  border-color: #FFB718;
+  background-color: #FFB718;
+}
+
+
+.dark-bg .menu ul li a .circle,
+.light-bg .menu ul li a .circle {
+  background-color: #333333;
+}
+
+.dark-bg .menu ul li.active a .circle,
+.light-bg .menu ul li.active a .circle {
+  background-color: #FFB718;
+}
+
+/* Orange Theme */
+.orange-bg {
+  background-color: #FFB718;
+}
+
+.orange-bg .glyphicon {
+  color: #FFFFFF;
+}

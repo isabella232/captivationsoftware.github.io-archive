@@ -1,0 +1,35 @@
+/* Override bootstrap large container */
+@media (min-width: 990px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* Override fullpage.js height calculations */
+.fp-responsive .fp-section {
+  height: auto !important;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .menu ul li a .text {
+    display: none;
+  }
+}
+
+@media (min-height: 700px) {
+  .hero {
+    margin-top: 30px;
+  }
+
+  img.icon {
+    margin: 60px auto;
+  }
+}
