@@ -22,7 +22,8 @@
       loopHorizontal: false,
       controlArrows: false,
       verticalCentered: true,
-      paddingBottom: '85px'
+      paddingBottom: '85px',
+      responsiveHeight: 400
     });
 
     // Initialize responsive font sizes
