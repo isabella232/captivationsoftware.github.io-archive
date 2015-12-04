@@ -109,10 +109,6 @@ p {
   padding: 10px 0;
 }
 
-.content {
-  min-height: 600px;
-}
-
 .footer {
   position: absolute;
   left: 0;
