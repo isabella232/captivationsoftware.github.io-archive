@@ -3,14 +3,19 @@
     var $menu = $('.menu').hide();
     var $hero = $('.hero');
 
-    setInterval(function() {
-      var max = 0;
-      $hero.find('p').each(function(i, p) {
-        var current = $(p).width();
-        if (current > max) max = current;
-      });
-      $hero.width(max);
-    }, 16);
+    function centerHero() {
+      var interval = 16;
+      var iterations = 10;
+      var loop = setInterval(function() {
+        var max = 0;
+        $hero.find('p').each(function(i, p) {
+          var current = $(p).width();
+          if (current > max) max = current;
+        });
+        $hero.width(max);
+        if (--iterations <= 0) clearInterval(loop);
+      }, interval);
+    }
 
     // Initialize fullpage.js
     $('#fullpage').fullpage({
@@ -20,7 +25,11 @@
       controlArrows: false,
       verticalCentered: true,
       responsiveWidth: 768,
-      responsiveHeight: 700
+      responsiveHeight: 700,
+      afterRender: function() {
+        $(window).resize(centerHero);
+        centerHero();
+      }
     });
 
     // Initialize responsive font sizes
