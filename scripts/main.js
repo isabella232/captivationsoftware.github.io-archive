@@ -4,8 +4,8 @@
       menu: $('#menu-template').html()
     }
 
-    // center the hero section so that it looks awesome
-    function centerHero() {
+    // center sections of the app
+    function centerize() {
       var max = 0;
       var $hero = $('.hero');
       $hero.find('p').each(function(i, p) {
@@ -31,7 +31,7 @@
       maximum: 1200
     });
 
-    $('.menu-placeholder').append(templates.menu);
+    $('.menu-placeholder').replaceWith(templates.menu);
 
     $('.glyphicon-chevron-down').on('click', function() {
       $.fn.fullpage.moveSectionDown();
@@ -48,7 +48,7 @@
     // check to see if the hero needs to be updated
     var defer = requestAnimationFrame || setTimeout;
     var loop = function() {
-      centerHero();
+      centerize();
       defer(loop, 16)
     }
     loop();
