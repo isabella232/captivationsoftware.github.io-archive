@@ -1,20 +1,18 @@
 (function($) {
   $(document).ready(function() {
-    var $menu = $('.menu').hide();
-    var $hero = $('.hero');
+    var templates = {
+      menu: $('#menu-template').html()
+    }
 
+    // center the hero section so that it looks awesome
     function centerHero() {
-      var interval = 16;
-      var iterations = 10;
-      var loop = setInterval(function() {
-        var max = 0;
-        $hero.find('p').each(function(i, p) {
-          var current = $(p).width();
-          if (current > max) max = current;
-        });
-        $hero.width(max);
-        if (--iterations <= 0) clearInterval(loop);
-      }, interval);
+      var max = 0;
+      var $hero = $('.hero');
+      $hero.find('p').each(function(i, p) {
+        var current = $(p).width();
+        if (current > max) max = current;
+      });
+      $hero.width(max);
     }
 
     // Initialize fullpage.js
@@ -23,13 +21,7 @@
       menu: '.menu',
       loopHorizontal: false,
       controlArrows: false,
-      verticalCentered: true,
-      responsiveWidth: 768,
-      responsiveHeight: 700,
-      afterRender: function() {
-        $(window).resize(centerHero);
-        centerHero();
-      }
+      verticalCentered: true
     });
 
     // Initialize responsive font sizes
@@ -38,7 +30,7 @@
       maximum: 1200
     });
 
-    $('.menu-placeholder').append($menu.show());
+    $('.menu-placeholder').append(templates.menu);
 
     $('.glyphicon-chevron-down').on('click', function() {
       $.fn.fullpage.moveSectionDown();
@@ -50,6 +42,15 @@
 
     // Set Copyright to the current year
     $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software');
+
+    // Due to issues with fullpage and flowtype, always
+    // check to see if the hero needs to be updated
+    var defer = requestAnimationFrame || setTimeout;
+    var loop = function() {
+      centerHero();
+      defer(loop, 16)
+    }
+    loop();
 
   });
 })(jQuery);

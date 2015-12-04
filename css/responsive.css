@@ -12,18 +12,9 @@
 }
 
 @media (max-width: 768px) {
-  /* Override fullpage.js height calculations */
-  .fp-responsive .fp-section, .fp-responsive  .fp-slides .fp-tableCell {
-    height: auto !important;
-  }
-
-  .main.container, .fp-responsive .fp-slides {
-    padding-bottom: 85px;
-  }
-
-  .fp-responsive .fp-slides .fp-tableCell .main.container {
+  .main.container {
     min-height: auto;
-    padding-bottom: 0;
+    padding-bottom: 85px;
   }
 
   h1 {
@@ -32,6 +23,10 @@
 
   p {
     font-size: 18px;
+  }
+
+  .menu {
+    margin-top: 60px;
   }
 
   .menu ul li a .text {
