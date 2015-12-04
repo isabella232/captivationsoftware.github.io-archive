@@ -22,7 +22,7 @@
       loopHorizontal: false,
       controlArrows: false,
       verticalCentered: true,
-      paddingBottom: '80px'
+      paddingBottom: '85px'
     });
 
     // Initialize responsive font sizes
