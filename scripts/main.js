@@ -20,8 +20,7 @@
       anchors: ['', 'choose-us', 'solutions', 'capabilities', 'careers', 'contact'],
       menu: '.menu',
       loopHorizontal: false,
-      controlArrows: false,
-      verticalCentered: true
+      controlArrows: false
     });
 
     // Initialize responsive font sizes
