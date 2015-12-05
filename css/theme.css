@@ -12,7 +12,7 @@
 }
 
 .black-bg .glyphicon {
-  color: #FFB718;
+  color: #F7A700;
 }
 
 .black-bg .menu ul li a {
@@ -22,13 +22,13 @@
 .black-bg h1,
 .black-bg .btn,
 .black-bg .menu ul li.active a {
-  color: #FFB718;
+  color: #F7A700;
 }
 
 .black-bg .btn:hover {
   color: #FFFFFF;
-  border-color: #FFB718;
-  background-color: #FFB718;
+  border-color: #F7A700;
+  background-color: #F7A700;
 }
 
 .black-bg .menu ul li a .circle {
@@ -36,7 +36,7 @@
 }
 
 .black-bg .menu ul li.active a .circle {
-  background-color: #FFB718;
+  background-color: #F7A700;
 }
 
 .black-bg .copyright,
@@ -64,14 +64,14 @@
 .dark-bg h1,
 .dark-bg .btn,
 .dark-bg .menu ul li.active a {
-  color: #FFB718;
+  color: #F7A700;
 }
 
 .dark-bg .btn:hover,
 .light-bg .btn:hover {
   color: #FFFFFF;
-  border-color: #FFB718;
-  background-color: #FFB718;
+  border-color: #F7A700;
+  background-color: #F7A700;
 }
 
 .dark-bg .menu ul li a .circle,
@@ -92,7 +92,7 @@
 /* Orange Theme */
 .orange-bg {
   background-color: #F38B20;
-  background-image: linear-gradient(to left top, #F38B20 0,  #F7A700 100%);
+  background-image: linear-gradient(to right bottom, #EBA009 33%,  #F38B20 100%);
 }
 
 .orange-bg .glyphicon {

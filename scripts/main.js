@@ -3,7 +3,8 @@
     var templates = {
       menu: $('#menu-template').html(),
       chooseUs: $('#choose-us-template').html(),
-    }
+      solutions: $('#solutions-template').html()
+    };
 
     // Initialize fullpage.js
     $('#fullpage').fullpage({
@@ -12,7 +13,7 @@
       loopHorizontal: false,
       controlArrows: false,
       verticalCentered: true,
-      paddingBottom: '85px',
+      paddingBottom: '60px',
       responsiveHeight: 400
     });
 
@@ -26,6 +27,7 @@
     // interpolate templates
     $('.menu-content').replaceWith(templates.menu);
     $('.choose-us-content').replaceWith(templates.chooseUs);
+    $('.solutions-content').replaceWith(templates.solutions);
 
 
     $('.glyphicon-chevron-down').on('click', function() {
