@@ -158,17 +158,3 @@ img.logo-mark {
   height: 150px;
   margin: 60px 0 20px;
 }
-
-img.retina {
-  display: none !important;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  img {
-    display: none !important;
-  }
-
-  img.retina {
-    display: inline-block !important;
-  }
-}
