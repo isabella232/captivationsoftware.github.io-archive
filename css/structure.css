@@ -20,16 +20,7 @@ body {
   white-space: nowrap;
 }
 
-img.mark {
-  width: 150px;
-  height: 150px;
-  margin: 60px 0 20px;
-  display: inline-block;
-  background-color: transparent;
-  background-repeat: no-repeat;
-}
-
-img.background-overlay {
+.background-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -162,4 +153,24 @@ p {
 
 .footer .glyphicon {
   top: 0;
+}
+
+img.logo-mark {
+  width: 150px;
+  height: 150px;
+  margin: 60px 0 20px;
+}
+
+img.retina {
+  display: none;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  img {
+    display: none;
+  }
+
+  img.retina {
+    display: initial;
+  }
 }
