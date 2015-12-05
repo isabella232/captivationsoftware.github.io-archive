@@ -15,6 +15,12 @@
       $hero.width(max);
     }
 
+    function progressiveFix() {
+      for (var delay = 10; delay < 1000; delay *= 2) {
+        setTimeout(centerize, delay);
+      }
+    }
+
     // Initialize fullpage.js
     $('#fullpage').fullpage({
       anchors: ['', 'choose-us', 'solutions', 'capabilities', 'careers', 'contact'],
@@ -23,10 +29,13 @@
       controlArrows: false,
       verticalCentered: true,
       paddingBottom: '85px',
-      responsiveHeight: 400
+      responsiveHeight: 400,
+      afterResize: progressiveFix,
+      afterRender: progressiveFix
     });
 
     // Initialize responsive font sizes
+    var throttle;
     $('body').flowtype({
       minimum: 300,
       maximum: 1200
@@ -44,15 +53,5 @@
 
     // Set Copyright to the current year
     $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software');
-
-    // Due to issues with fullpage and flowtype, always
-    // check to see if the hero needs to be updated
-    var defer = requestAnimationFrame || setTimeout;
-    var loop = function() {
-      centerize();
-      defer(loop, 16)
-    }
-    loop();
-
   });
 })(jQuery);
