@@ -31,7 +31,8 @@
       paddingBottom: '85px',
       responsiveHeight: 400,
       afterResize: progressiveFix,
-      afterRender: progressiveFix
+      afterRender: progressiveFix,
+      onLeave: progressiveFix
     });
 
     // Initialize responsive font sizes
