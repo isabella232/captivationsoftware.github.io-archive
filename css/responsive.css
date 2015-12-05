@@ -10,12 +10,12 @@
     display: none;
   }
 
-  .footer .mini-brand {
-    display: none !important;
+  img.mini-brand, img.responsive.mini-brand {
+    display: none;
   }
 
-  .footer .brand {
-    display: inline-block !important;
+  img.brand, img.responsive.brand {
+    display: inline-block;
   }
 }
 
@@ -48,12 +48,12 @@
     background-color: #2F2F2F;
   }
 
-  .footer .brand {
-    display: none !important;
+  img.brand, img.responsive.brand {
+    display: none;
   }
 
-  .footer .mini-brand {
-    display: inline-block !important;
+  img.mini-brand, img.responsive.mini-brand {
+    display: inline-block;
     width: 156px;
     height: 25px;
     margin-left: 0;
