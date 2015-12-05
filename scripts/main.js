@@ -5,23 +5,6 @@
       chooseUs: $('#choose-us-template').html(),
     }
 
-    // center sections of the app
-    function centerize() {
-      var max = 0;
-      var $hero = $('.hero');
-      $hero.find('p').each(function(i, p) {
-        var current = $(p).width();
-        if (current > max) max = current;
-      });
-      $hero.width(max);
-    }
-
-    function progressiveFix() {
-      for (var delay = 10; delay < 1000; delay *= 2) {
-        setTimeout(centerize, delay);
-      }
-    }
-
     // Initialize fullpage.js
     $('#fullpage').fullpage({
       anchors: ['', 'choose-us', 'solutions', 'capabilities', 'careers', 'contact'],
@@ -30,10 +13,7 @@
       controlArrows: false,
       verticalCentered: true,
       paddingBottom: '85px',
-      responsiveHeight: 400,
-      afterResize: progressiveFix,
-      afterRender: progressiveFix,
-      onLeave: progressiveFix
+      responsiveHeight: 400
     });
 
     // Initialize responsive font sizes
