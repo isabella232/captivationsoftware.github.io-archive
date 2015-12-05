@@ -10,11 +10,11 @@
     display: none;
   }
 
-  img.mini-brand {
+  img.mini-brand, img.responsive.mini-brand {
     display: none;
   }
 
-  img.brand {
+  img.brand, img.responsive.brand {
     display: inline-block;
   }
 }
@@ -48,11 +48,11 @@
     background-color: #2F2F2F;
   }
 
-  img.brand {
+  img.brand, img.responsive.brand {
     display: none;
   }
 
-  img.mini-brand {
+  img.mini-brand, img.responsive.mini-brand {
     display: inline-block;
     width: 156px;
     height: 25px;
