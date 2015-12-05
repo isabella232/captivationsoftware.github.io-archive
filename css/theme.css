@@ -44,10 +44,6 @@
   color: #EEEEEE;
 }
 
-.black-bg .brand {
-  background-image: url('../images/logo-light.png');
-}
-
 /* Gray Themes */
 .dark-bg {
   background-color: #E3E3E3;
@@ -91,11 +87,6 @@
 .dark-bg .menu ul li.active a .circle,
 .light-bg .menu ul li.active a .circle {
   background-color: #FFB718;
-}
-
-.dark-bg .brand,
-.light-bg .brand {
-  background-image: url('../images/logo-dark.png');
 }
 
 /* Orange Theme */

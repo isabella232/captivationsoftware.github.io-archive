@@ -1,7 +1,8 @@
 (function($) {
   $(document).ready(function() {
     var templates = {
-      menu: $('#menu-template').html()
+      menu: $('#menu-template').html(),
+      chooseUs: $('#choose-us-template').html(),
     }
 
     // center sections of the app
@@ -42,7 +43,10 @@
       maximum: 1200
     });
 
-    $('.menu-placeholder').replaceWith(templates.menu);
+    // interpolate templates
+    $('.menu-content').replaceWith(templates.menu);
+    $('.choose-us-content').replaceWith(templates.chooseUs);
+
 
     $('.glyphicon-chevron-down').on('click', function() {
       $.fn.fullpage.moveSectionDown();
