@@ -67,7 +67,6 @@ h1 {
   z-index: 1;
 }
 
-
 .glyphicon-chevron-up::after {
   content: "BACK TO TOP";
   font-family: "Proxima Nova";
@@ -131,10 +130,9 @@ p {
 
 .footer .brand {
   float: left;
-  width: 187.5px;
+  width: 188px;
   height: 30px;
   margin-left: 20px;
-  background-size: 187.5px 30px;
 }
 
 .footer .copyright {
@@ -162,15 +160,15 @@ img.logo-mark {
 }
 
 img.retina {
-  display: none;
+  display: none !important;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   img {
-    display: none;
+    display: none !important;
   }
 
   img.retina {
-    display: initial;
+    display: inline-block !important;
   }
 }

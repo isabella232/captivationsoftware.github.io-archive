@@ -5,9 +5,17 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .footer .title {
     display: none;
+  }
+
+  .footer .mini-brand {
+    display: none;
+  }
+
+  .footer .brand {
+    display: inline-block;
   }
 }
 
@@ -38,13 +46,14 @@
     background-color: #2F2F2F;
   }
 
-  .dark-bg .footer .brand,
-  .light-bg .footer .brand,
-  .black-bg .footer .brand {
+  .footer .brand {
+    display: none;
+  }
+
+  .footer .mini-brand {
+    display: inline-block;
     width: 156px;
     height: 25px;
-    background-size: 156px 25px;
-    background-image: url('../images/logo-light-small.png');
     margin-left: 0;
   }
 
