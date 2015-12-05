@@ -43,7 +43,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 30px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
     background-color: #2F2F2F;
   }
 
