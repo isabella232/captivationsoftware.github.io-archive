@@ -1,17 +1,17 @@
 /* Override bootstrap large container */
-@media (min-width: 990px) {
+@media (min-width: 992px) {
   .container {
     width: 960px;
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .menu ul li a .text {
     display: none;
   }
 }
 
-@media (min-width: 751px) {
+@media (min-width: 768px) {
   .footer .title {
     display: none;
   }
@@ -25,7 +25,7 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
 
   h1 {
     font-size: 24px;
@@ -33,6 +33,16 @@
 
   p {
     font-size: 18px;
+  }
+
+  .solution.row {
+    height: auto;
+  }
+
+  .vertically-centered {
+    transform: initial;
+    top: initial;
+    margin: 15px 0;
   }
 
   .glyphicon-chevron-up,

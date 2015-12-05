@@ -21,7 +21,8 @@
     var throttle;
     $('body').flowtype({
       minimum: 300,
-      maximum: 1200
+      maximum: 1200,
+      minFont: 20
     });
 
     // interpolate templates
