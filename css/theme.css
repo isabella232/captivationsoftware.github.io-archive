@@ -100,9 +100,25 @@
 
 /* Orange Theme */
 .orange-bg {
-  background-color: #FFB718;
+  background-color: #F38B20;
+  background-image: linear-gradient(to left top, #F38B20 0,  #F7A700 100%);
 }
 
 .orange-bg .glyphicon {
   color: #FFFFFF;
+}
+
+/* Miscellaneous Images */
+img.background-overlay {
+  background-image: url('../images/stock.jpg');
+}
+
+img.mark {
+  background-image: url('../images/mark.png');
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  img.mark {
+    background-image: url('../images/mark2x.png');
+  }
 }
