@@ -11,11 +11,11 @@
   }
 
   .footer .mini-brand {
-    display: none;
+    display: none !important;
   }
 
   .footer .brand {
-    display: inline-block;
+    display: inline-block !important;
   }
 }
 
@@ -49,11 +49,11 @@
   }
 
   .footer .brand {
-    display: none;
+    display: none !important;
   }
 
   .footer .mini-brand {
-    display: inline-block;
+    display: inline-block !important;
     width: 156px;
     height: 25px;
     margin-left: 0;
