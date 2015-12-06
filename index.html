@@ -18,7 +18,7 @@
 <body>
   <script type="text/template" id="menu-template">
     <nav class="menu col-xs-1 col-sm-2">
-      <ul>
+      <ul class="list-unstyled">
         <li data-menuanchor="choose-us">
           <a href="#choose-us" title="CHOOSE US">
             <span class="text">CHOOSE US</span>
@@ -89,7 +89,7 @@
   </script>
   <script type="text/template" id="jobs-template">
     <div class="col-xs-11 col-sm-10">
-      <h1>We're Hiring!</h1>
+      <h1>Join Our Team</h1>
       <p><em>Are you an innovative coder who keeps up to date with the latest and greatest technologies? Do you enjoy working closely with clients, helping to solve their complicated problems without cutting corners? If yes, we want to meet you!</em></p>
       <p>Among the perks of working for CAPTIVATION are:</p>
       <ul>
@@ -99,6 +99,50 @@
       </ul>
       <p>If you believe you are a good fit, send your resume to <a href="mailto:jobs@captivationsoftware.com">jobs@captivationsoftware.com</a>.</p>
       <p>We look forward to hearing from you!</p>
+    </div>
+  </script>
+  <script type="text/template" id="capabilities-template">
+    <div class="col-xs-12 col-md-6">
+      <h2>SYSTEM & INTEGRATION</h2>
+      <ul class="list-unstyled">
+        <li>Cloud Service Deployment ( Heroku, AWS )</li>
+        <li>Requirements Gathering</li>
+        <li>DevOps</li>
+        <li>Continuous Integration</li>
+      </ul>
+      <h2>DESKTOP APPLICATIONS</h2>
+      <ul class="list-unstyled">
+        <li>.NET platform ( C# )</li>
+      </ul>
+      <h2>DATA MANAGEMENT</h2>
+      <ul class="list-unstyled">
+        <li>Domain Modeling and Schema Design</li>
+        <li>Relation Databases ( PostgreSQL, MySQL, Oracle )</li>
+        <li>NoSQL Databases ( MongoDB, CouchDB, Accumulo, Neo4j )</li>
+        <li>Full-Text Searching ( Solr, Elasticsearch )</li>
+        <li>Metrics and Reporting</li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h2>WEB APPLICATIONS</h2>
+      <ul class="list-unstyled">
+        <li>Frontend Development ( JavaScript, CSS, HTML5 )</li>
+        <li>Responsive / Mobile Applications</li>
+        <li>Web Sockets, Server-Sent Events, and Web Workers</li>
+        <li>Single Page Applications ( AngularJS, Backbone, React )</li>
+        <li>User Interface / User Experience Design</li>
+        <li>Static Asset Optimization</li>
+        <li>Cross-Browser Compatibility</li>
+      </ul>
+      <h2>SERVICES</h2>
+      <ul class="list-unstyled">
+        <li>APIs and Middleware</li>
+        <li>Enterprise Applications ( Java, NodeJS, Ruby )</li>
+        <li>Low-Level Application ( C, C++ )</li>
+        <li>REST / SOAP Web Services</li>
+        <li>OAuth / Authentican and Authorization</li>
+        <li>Distribution / Load Balancing</li>
+      </ul>
     </div>
   </script>
 
@@ -140,7 +184,7 @@
       </div>
     </div>
     <div class="dark-bg section">
-      <div class="main container overflow">
+      <div class="main container">
         <div class="row">
           <div class="col-xs-11 col-sm-10">
             <div class="row">
@@ -168,24 +212,21 @@
       </div>
     </div>
     <div class="light-bg section">
-      <div class="slide">
-        <div class="main container">
-          <div class="row">
-            <div class="col-xs-10 ">
-              <h1>Our Capabilities</h1>
-              <p>Our jobs use industry-standard tools and techniques, and are constantly on the lookout for new technologies that will give our clients a competitive edge.</p>
+      <div class="main container">
+        <div class="row">
+          <div class="col-xs-11 col-sm-10">
+            <div class="row">
+              <div class="col-xs-12">
+                <h1>Our Capabilities</h1>
+              </div>
             </div>
-            <div class="menu-content"></div>
-          </div>
-        </div>
-      </div>
-      <div class="slide" data-anchor="full">
-        <div class="main container">
-          <div class="row">
-            <div class="col-xs-10">
-              <p>Foo</p>
+            <div class="row">
+              <div class="capabilities">
+                <div class="capabilities-content"></div>
+              </div>
             </div>
           </div>
+          <div class="menu-content"></div>
         </div>
       </div>
       <div class="footer container hidden-xs hidden-sm visible-md visible-lg">

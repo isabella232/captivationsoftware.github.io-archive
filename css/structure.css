@@ -49,8 +49,8 @@ h2 {
 }
 
 h2 + p {
-  font-weight: 600;
   padding: 2px 0;
+  font-weight: normal;
 }
 
 p {
@@ -138,12 +138,6 @@ a:hover {
   padding: 0;
 }
 
-.menu ul {
-  padding: 0;
-  list-style: none;
-  list-style-type: none;
-}
-
 .menu ul li {
   width: 100%;
   line-height: 30px;
@@ -172,6 +166,19 @@ a:hover {
   width: 13px;
   border-radius: 13px;
   margin-bottom: -1px;
+}
+
+.capabilities h2 {
+  margin: 5px 0;
+}
+
+.capabilities ul {
+  margin-bottom: 20px;
+}
+
+.capabilities ul li {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .footer {
@@ -208,6 +215,7 @@ img.logo-mark {
 img.icon {
   width: 120px;
   height: 120px;
+  margin-top: 15px;
 }
 
 .sticky.footer {
