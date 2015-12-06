@@ -49,16 +49,23 @@ h2 {
 }
 
 h2 + p {
-  font-size: 17px;
   font-weight: 600;
   padding: 2px 0;
 }
 
-
 p {
-  font-size: 24px;
   padding: 10px 0;
   font-weight: 600;
+}
+
+p,
+ul li {
+  font-size: 18px;
+}
+
+em {
+  font-size: 24px;
+  font-style: normal;
 }
 
 a:link,
@@ -155,17 +162,16 @@ a:hover {
   text-decoration: none;
 }
 
+.menu ul li a .text {
+  margin-right: 10px;
+}
+
 .menu ul li a .circle {
   display: inline-block;
   height: 13px;
   width: 13px;
   border-radius: 13px;
-  margin-left: 10px;
   margin-bottom: -1px;
-}
-
-ul.perks li {
-  font-size: 18px;
 }
 
 .footer {

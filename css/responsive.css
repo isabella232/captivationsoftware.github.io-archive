@@ -15,6 +15,14 @@
     display: none;
   }
 
+  .menu ul li a .circle {
+    margin-right: 5px;
+  }
+
+  .sticky.footer .menu li.active .text {
+    margin-right: 0;
+  }
+
   img.icon {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -59,6 +67,5 @@
     height: 60px;
     line-height: 60px;
     padding: 0 30px;
-    background-color: #2F2F2F;
   }
 }

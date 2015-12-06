@@ -8,7 +8,7 @@
 
 /* Black Theme */
 .black-bg {
-  background-color: #333333;
+  background-color: #373737;
 }
 
 .black-bg .glyphicon {
@@ -104,4 +104,8 @@
 
 .background-overlay {
   background-image: url('../images/stock.jpg');
+}
+
+.sticky.footer {
+  background-color: #333333;
 }
