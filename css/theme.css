@@ -63,9 +63,11 @@
 
 .light-bg h1,
 .light-bg .btn,
+.light-bg a,
 .light-bg .menu ul li.active a,
 .dark-bg h1,
 .dark-bg .btn,
+.dark-bg a,
 .dark-bg .menu ul li.active a {
   color: #F7A700;
 }

@@ -7,7 +7,8 @@
       integration: $('#integration-template').html(),
       intelligence: $('#intelligence-template').html(),
       jobs: $('#jobs-template').html(),
-      capabilities: $('#capabilities-template').html()
+      capabilities: $('#capabilities-template').html(),
+      contact: $('#contact-template').html()
     };
 
     // Initialize fullpage.js
@@ -35,6 +36,7 @@
         $('.intelligence-content').replaceWith(templates.intelligence);
         $('.jobs-content').replaceWith(templates.jobs);
         $('.capabilities-content').replaceWith(templates.capabilities);
+        $('.contact-content').replaceWith(templates.contact);
 
         $('.section').each(function(i, section) {
           var $section = $(section);
@@ -65,6 +67,6 @@
     });
 
     // Set Copyright to the current year
-    $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software');
+    $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software, LLC');
   });
 })(jQuery);
