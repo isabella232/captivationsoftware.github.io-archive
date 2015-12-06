@@ -10,7 +10,7 @@
 
     // Initialize fullpage.js
     $('#fullpage').fullpage({
-      anchors: ['', 'choose-us', 'solutions', 'capabilities', 'careers', 'contact'],
+      anchors: ['', 'choose-us', 'solutions', 'capabilities', 'jobs', 'contact'],
       menu: '.menu',
       loopHorizontal: false,
       controlArrows: false,
