@@ -105,13 +105,14 @@ a:hover {
 .btn:hover {
   border: solid 3px;
   border-radius: 0;
-  padding: 15px;
+  padding: 12px;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 15px 0 30px;
+  margin: 15px 0;
   box-shadow: none;
   text-decoration: none;
+  min-width: 220px;
 }
 
 .glyphicon {
@@ -274,4 +275,9 @@ img.icon {
   float: right;
   line-height: 60px;
   white-space: nowrap;
+}
+
+.required {
+  font-style: italic;
+  font-size: 14px;
 }
