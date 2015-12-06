@@ -18,6 +18,11 @@
 }
 
 @media (max-width: 991px) {
+  .main.container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
   .menu ul li a .text {
     display: none;
   }
@@ -40,10 +45,6 @@
 
   .fp-slide {
     width: 100% !important;
-  }
-
-  h1 {
-    font-size: 24px;
   }
 
   p {
