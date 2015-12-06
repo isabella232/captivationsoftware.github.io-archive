@@ -61,6 +61,13 @@ p {
   font-weight: 600;
 }
 
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+
 .vertically-centered {
   position: relative;
   transform: translateY(-50%);
@@ -140,12 +147,12 @@ p {
   font-weight: bold;
   font-size: 15px;
   line-height: 1;
+  text-decoration: none;
 }
 
 .menu ul li a:hover {
   text-decoration: none;
 }
-
 
 .menu ul li a .circle {
   display: inline-block;
@@ -154,6 +161,10 @@ p {
   border-radius: 13px;
   margin-left: 10px;
   margin-bottom: -1px;
+}
+
+ul.perks li {
+  font-size: 18px;
 }
 
 .footer {

@@ -15,12 +15,15 @@
   color: #F7A700;
 }
 
+
+.black-bg ul li,
 .black-bg .menu ul li a {
   color: #FFFFFF;
 }
 
 .black-bg h1,
 .black-bg .btn,
+.black-bg a,
 .black-bg .menu ul li.active a {
   color: #F7A700;
 }
