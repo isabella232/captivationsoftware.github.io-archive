@@ -20,13 +20,18 @@
       paddingBottom: '60px',
       responsiveHeight: 600,
       responsiveWidth: 992,
-      fixedElements: '.sticky.footer',
+      fixedElements: '.sticky',
       onLeave: toggleSticky,
       afterLoad: toggleSticky
     });
 
     function toggleSticky(index1, index2) {
-      $('.sticky.footer').toggleClass('invisible', index1 == 0 || index2 == 0)
+      var $section = $('.section.active');
+      $('.sticky')
+        .toggleClass('invisible', index1 == 0 || index2 == 0)
+        .toggleClass('black-bg', $section.hasClass('black-bg'))
+        .toggleClass('light-bg', $section.hasClass('light-bg'))
+        .toggleClass('dark-bg', $section.hasClass('dark-bg'));
     }
 
     // Initialize responsive font sizes

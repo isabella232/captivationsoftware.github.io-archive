@@ -217,8 +217,16 @@ img.icon {
   margin-top: 15px;
 }
 
-.sticky.footer {
+.sticky {
   position: fixed;
+}
+
+.sticky.nav {
+  right: 10px;
+  top: 200px;
+}
+
+.sticky.footer {
   height: 60px;
   padding: 0 15px;
 }
