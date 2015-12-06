@@ -99,6 +99,7 @@ a:hover {
   text-transform: uppercase;
   margin: 15px 0 30px;
   box-shadow: none;
+  text-decoration: none;
 }
 
 .glyphicon {

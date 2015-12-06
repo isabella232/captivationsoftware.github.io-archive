@@ -6,12 +6,12 @@
       innovation: $('#innovation-template').html(),
       integration: $('#integration-template').html(),
       intelligence: $('#intelligence-template').html(),
-      developers: $('#developers-template').html()
+      jobs: $('#jobs-template').html()
     };
 
     // Initialize fullpage.js
     $('#fullpage').fullpage({
-      anchors: ['', 'choose-us', 'solutions', 'capabilities', 'developers', 'contact'],
+      anchors: ['', 'choose-us', 'solutions', 'capabilities', 'jobs', 'contact'],
       menu: '.menu',
       loopHorizontal: false,
       controlArrows: false,
@@ -33,7 +33,7 @@
     $('.innovation-content').replaceWith(templates.innovation);
     $('.integration-content').replaceWith(templates.integration);
     $('.intelligence-content').replaceWith(templates.intelligence);
-    $('.developers-content').replaceWith(templates.developers);
+    $('.jobs-content').replaceWith(templates.jobs);
 
 
     $('.glyphicon-chevron-down').on('click', function() {
