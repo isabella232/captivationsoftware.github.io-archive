@@ -22,16 +22,31 @@
       responsiveWidth: 992,
       fixedElements: '.sticky',
       onLeave: toggleSticky,
-      afterLoad: toggleSticky
+      afterLoad: toggleSticky,
+      afterRender: function() {
+        // interpolate templates
+        $('.menu-content').replaceWith(templates.menu);
+        $('.choose-us-content').replaceWith(templates.chooseUs);
+        $('.innovation-content').replaceWith(templates.innovation);
+        $('.integration-content').replaceWith(templates.integration);
+        $('.intelligence-content').replaceWith(templates.intelligence);
+        $('.jobs-content').replaceWith(templates.jobs);
+        $('.capabilities-content').replaceWith(templates.capabilities);
+
+        if (window.innerWidth < 992) {
+          $('.long.section').each(function(i, section) {
+            var $section = $(section);
+            $section.find('.menu').fixTo($section, {
+              top: window.innerHeight / 2 - 80,
+              bottom: window.innerHeight / 2 - 80
+            });
+          });
+        }
+      }
     });
 
     function toggleSticky(index1, index2) {
-      var $section = $('.section.active');
-      $('.sticky')
-        .toggleClass('invisible', index1 == 0 || index2 == 0)
-        .toggleClass('black-bg', $section.hasClass('black-bg'))
-        .toggleClass('light-bg', $section.hasClass('light-bg'))
-        .toggleClass('dark-bg', $section.hasClass('dark-bg'));
+      $('.sticky').toggleClass('invisible', index1 == 0 || index2 == 0)
     }
 
     // Initialize responsive font sizes
@@ -39,16 +54,6 @@
       minimum: 300,
       maximum: 1200
     });
-
-    // interpolate templates
-    $('.menu-content').replaceWith(templates.menu);
-    $('.choose-us-content').replaceWith(templates.chooseUs);
-    $('.innovation-content').replaceWith(templates.innovation);
-    $('.integration-content').replaceWith(templates.integration);
-    $('.intelligence-content').replaceWith(templates.intelligence);
-    $('.jobs-content').replaceWith(templates.jobs);
-    $('.capabilities-content').replaceWith(templates.capabilities);
-
 
     $('.glyphicon-chevron-down').on('click', function() {
       $.fn.fullpage.moveSectionDown();
