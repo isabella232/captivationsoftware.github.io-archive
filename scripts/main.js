@@ -5,7 +5,8 @@
       chooseUs: $('#choose-us-template').html(),
       innovation: $('#innovation-template').html(),
       integration: $('#integration-template').html(),
-      intelligence: $('#intelligence-template').html()
+      intelligence: $('#intelligence-template').html(),
+      careers: $('#careers-template').html()
     };
 
     // Initialize fullpage.js
@@ -32,6 +33,7 @@
     $('.innovation-content').replaceWith(templates.innovation);
     $('.integration-content').replaceWith(templates.integration);
     $('.intelligence-content').replaceWith(templates.intelligence);
+    $('.careers-content').replaceWith(templates.careers);
 
 
     $('.glyphicon-chevron-down').on('click', function() {
