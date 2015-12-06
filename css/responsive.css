@@ -47,6 +47,10 @@
     width: 100% !important;
   }
 
+  h1 {
+    font-size: 22px;
+  }
+
   p {
     font-size: 18px;
   }
