@@ -23,6 +23,9 @@
       fixedElements: '.sticky',
       onLeave: toggleSticky,
       afterLoad: toggleSticky,
+      afterResize: function() {
+        $('.section .menu').fixTo('refresh');
+      },
       afterRender: function() {
         // interpolate templates
         $('.menu-content').replaceWith(templates.menu);
@@ -33,15 +36,13 @@
         $('.jobs-content').replaceWith(templates.jobs);
         $('.capabilities-content').replaceWith(templates.capabilities);
 
-        if (window.innerWidth < 992) {
-          $('.section').each(function(i, section) {
-            var $section = $(section);
-            $section.find('.menu').fixTo($section, {
-              top: window.innerHeight / 2 - 80,
-              bottom: window.innerHeight / 2 - 80
-            });
+        $('.section').each(function(i, section) {
+          var $section = $(section);
+          $section.find('.menu').fixTo($section, {
+            top: window.innerHeight / 2 - 80,
+            bottom: window.innerHeight / 2 - 80
           });
-        }
+        });
       }
     });
 

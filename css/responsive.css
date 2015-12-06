@@ -3,6 +3,11 @@
   .container {
     width: 960px;
   }
+
+  .section .menu {
+    position: absolute !important;
+    top: calc(50%) !important;
+  }
 }
 
 @media (max-width: 991px) {
