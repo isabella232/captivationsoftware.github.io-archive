@@ -3,7 +3,9 @@
     var templates = {
       menu: $('#menu-template').html(),
       chooseUs: $('#choose-us-template').html(),
-      solutions: $('#solutions-template').html()
+      innovation: $('#innovation-template').html(),
+      integration: $('#integration-template').html(),
+      intelligence: $('#intelligence-template').html()
     };
 
     // Initialize fullpage.js
@@ -26,7 +28,9 @@
     // interpolate templates
     $('.menu-content').replaceWith(templates.menu);
     $('.choose-us-content').replaceWith(templates.chooseUs);
-    $('.solutions-content').replaceWith(templates.solutions);
+    $('.innovation-content').replaceWith(templates.innovation);
+    $('.integration-content').replaceWith(templates.integration);
+    $('.intelligence-content').replaceWith(templates.intelligence);
 
 
     $('.glyphicon-chevron-down').on('click', function() {

@@ -9,6 +9,11 @@
   .menu ul li a .text {
     display: none;
   }
+
+  img.icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -75,13 +80,5 @@
   .footer .title {
     display: inline;
     color: #FFB718;
-  }
-
-  .fp-slidesContainer {
-    width: 100% !important;
-  }
-
-  .fp-slide {
-    width: 100% !important;
   }
 }
