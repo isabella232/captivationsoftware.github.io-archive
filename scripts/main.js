@@ -18,8 +18,15 @@
       verticalCentered: true,
       paddingBottom: '60px',
       responsiveHeight: 600,
-      responsiveWidth: 992
+      responsiveWidth: 992,
+      fixedElements: '.sticky.footer',
+      onLeave: toggleSticky,
+      afterLoad: toggleSticky
     });
+
+    function toggleSticky(index1, index2) {
+      $('.sticky.footer').toggleClass('invisible', index1 == 0 || index2 == 0)
+    }
 
     // Initialize responsive font sizes
     $('body').flowtype({

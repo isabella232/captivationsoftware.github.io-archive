@@ -190,13 +190,6 @@ ul.perks li {
   line-height: 30px;
 }
 
-.footer .title {
-  float: right;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .footer .glyphicon {
   top: 0;
 }
@@ -210,4 +203,37 @@ img.logo-mark {
 img.icon {
   width: 120px;
   height: 120px;
+}
+
+.sticky.footer {
+  position: fixed;
+  height: 60px;
+  padding: 0 15px;
+}
+
+.sticky.footer .menu {
+  position: relative;
+  top: initial;
+  margin: 0;
+  float: right;
+
+}
+
+.sticky.footer .menu li,
+.sticky.footer .menu .circle {
+  display: none;
+}
+
+.sticky.footer .menu li.active {
+  display: inline-block;
+}
+
+.sticky.footer .menu li.active .text {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFB718;
+  float: right;
+  line-height: 60px;
 }

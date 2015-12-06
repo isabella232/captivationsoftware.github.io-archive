@@ -4,10 +4,6 @@
     width: 960px;
   }
 
-  .footer .title {
-    display: none;
-  }
-
   img.mini-brand {
     display: none;
   }
@@ -84,10 +80,5 @@
     width: 156px;
     height: 25px;
     margin-left: 0;
-  }
-
-  .footer .title {
-    display: inline;
-    color: #FFB718;
   }
 }
