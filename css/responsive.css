@@ -3,14 +3,6 @@
   .container {
     width: 960px;
   }
-
-  img.mini-brand {
-    display: none;
-  }
-
-  img.brand {
-    display: inline-block;
-  }
 }
 
 @media (max-width: 991px) {
@@ -33,7 +25,6 @@
     top: initial;
     margin: 15px 0;
   }
-
 
   .fp-slidesContainer {
     width: 100% !important;
@@ -71,12 +62,7 @@
     background-color: #2F2F2F;
   }
 
-  img.brand {
-    display: none;
-  }
-
   img.mini-brand {
-    display: inline-block;
     width: 156px;
     height: 25px;
     margin-left: 0;
