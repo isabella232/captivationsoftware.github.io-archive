@@ -20,6 +20,15 @@
     top: initial;
     margin: 15px 0;
   }
+
+
+  .fp-slidesContainer {
+    width: 100% !important;
+  }
+
+  .fp-slide {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 768px) {
