@@ -18,7 +18,8 @@
       verticalCentered: true,
       paddingBottom: '60px',
       responsiveHeight: 600,
-      responsiveWidth: 992
+      normalScrollElements: '.overflow'
+      // responsiveWidth: 992,
     });
 
     // Initialize responsive font sizes
