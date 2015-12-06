@@ -177,16 +177,15 @@ ul.perks li {
 }
 
 .footer .brand {
-  float: left;
   width: 188px;
   height: 30px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .footer .copyright {
   float: right;
   font-size: 11px;
-  margin-right: 20px;
+  margin-right: 10px;
   line-height: 30px;
 }
 
@@ -211,12 +210,18 @@ img.icon {
   padding: 0 15px;
 }
 
+.sticky.footer .brand {
+  width: 156px;
+  height: 25px;
+  margin-left: 0;
+}
+
 .sticky.footer .menu {
   position: relative;
-  top: initial;
+  top: 0;
+  right: 0;
   margin: 0;
   float: right;
-
 }
 
 .sticky.footer .menu li,
@@ -236,4 +241,5 @@ img.icon {
   color: #FFB718;
   float: right;
   line-height: 60px;
+  white-space: nowrap;
 }
