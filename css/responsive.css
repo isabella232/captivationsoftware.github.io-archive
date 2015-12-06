@@ -11,8 +11,14 @@
   }
 
   img.icon {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .vertically-centered {
+    transform: initial;
+    top: initial;
+    margin: 15px 0;
   }
 }
 
@@ -42,12 +48,6 @@
 
   .solution.row {
     height: auto;
-  }
-
-  .vertically-centered {
-    transform: initial;
-    top: initial;
-    margin: 15px 0;
   }
 
   .glyphicon-chevron-up,
