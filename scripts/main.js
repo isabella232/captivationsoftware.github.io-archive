@@ -34,7 +34,7 @@
         $('.capabilities-content').replaceWith(templates.capabilities);
 
         if (window.innerWidth < 992) {
-          $('.long.section').each(function(i, section) {
+          $('.section').each(function(i, section) {
             var $section = $(section);
             $section.find('.menu').fixTo($section, {
               top: window.innerHeight / 2 - 80,
