@@ -3,6 +3,18 @@
   .container {
     width: 960px;
   }
+
+  .footer .title {
+    display: none;
+  }
+
+  img.mini-brand {
+    display: none;
+  }
+
+  img.brand {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 991px) {
@@ -29,23 +41,6 @@
   .fp-slide {
     width: 100% !important;
   }
-}
-
-@media (min-width: 768px) {
-  .footer .title {
-    display: none;
-  }
-
-  img.mini-brand {
-    display: none;
-  }
-
-  img.brand {
-    display: inline-block;
-  }
-}
-
-@media (max-width: 767px) {
 
   h1 {
     font-size: 24px;

@@ -16,13 +16,8 @@
       controlArrows: false,
       verticalCentered: true,
       paddingBottom: '60px',
-      responsiveHeight: 400,
-      afterLoad: function(anchor) {
-        $.fn.fullpage.setAutoScrolling(window.innerWidth >= 992 || anchor !== 'solutions');
-      },
-      onLeave: function() {
-        $.fn.fullpage.setAutoScrolling(true);
-      }
+      responsiveHeight: 600,
+      responsiveWidth: 992
     });
 
     // Initialize responsive font sizes
