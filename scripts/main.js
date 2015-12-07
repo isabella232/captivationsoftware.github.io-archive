@@ -79,7 +79,7 @@
       if ($section.length === 0) return;
 
       var nextY =  $(window).scrollTop() + $section[0].getBoundingClientRect().y;
-      window.scrollTo(0, nextY);
+      $(window).scrollTop(nextY);
     });
 
     // Set Copyright to the current year
