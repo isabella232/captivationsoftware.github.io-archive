@@ -289,7 +289,9 @@ img.icon {
 }
 
 .required.indicator {
+  position: relative;
   padding: 0;
+  margin-left: 15px;
 }
 
 .form-group .btn {
@@ -323,16 +325,24 @@ form label {
   position: relative;
 }
 
+.required.indicator:before,
 label.required::after {
-  color: #f7a700;
   content: "*";
-  font-size: 30px;
+  font-size: 26px;
   font-style: normal;
-  line-height: 60px;
+  width: 20px;
   position: absolute;
+}
+
+.required.indicator:before {
+  top: -3px;
+  left: -15px;
+}
+
+label.required:after {
+  line-height: 60px;
   right: 0;
   top: 0;
-  width: 20px;
 }
 
 
