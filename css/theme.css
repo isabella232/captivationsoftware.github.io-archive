@@ -74,6 +74,8 @@
   color: #F7A700;
 }
 
+.dark-bg .btn.active,
+.light-bg .btn.active,
 .dark-bg .btn:active,
 .light-bg .btn:active {
   color: #FFFFFF;
