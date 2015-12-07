@@ -46,7 +46,7 @@
           });
         });
 
-        $('form')[0].reset();
+        resetForm();
         $('button').prop('disabled', true);
       }
     });
@@ -72,6 +72,7 @@
     // Set Copyright to the current year
     $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software, LLC');
 
+    // Simple validation
     $('form :input').on('input change', function(e) {
       var $input = $(e.currentTarget);
       var $form = $input.closest('form');
@@ -83,6 +84,7 @@
       $form.find('button').prop('disabled', missingRequired);
     });
 
+    // Send email
     $('form button').on('click', function(e) {
       var $button = $(e.currentTarget);
       if ($button.is(':disabled')) return;
@@ -96,7 +98,8 @@
           dataType: 'json',
           success: function() {
             // remove event listeners and update button
-            $form.find('input').off('input change');
+            $form.find(':input').off();
+            resetForm();
             $button.off('click')
               .removeClass('error invisible')
               .addClass('success')
@@ -107,6 +110,10 @@
             $button.removeClass('invisible').addClass('error').text('Try Again');
           }
       });
+
+      function resetForm() {
+        $('form')[0].reset();
+      }
 
     });
   });
