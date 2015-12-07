@@ -69,8 +69,17 @@
       $.fn.fullpage.moveSectionDown();
     });
 
-    $('.glyphicon-chevron-up').on('click', function() {
+    $('.glyphicon-chevron-up, .footer .brand').on('click', function() {
       $.fn.fullpage.moveTo('', 0);
+    });
+
+    $('.sticky.footer .menu li').on('click', function(e) {
+      var anchor = $(e.currentTarget).data('menuanchor');
+      var $section = $('.section[data-anchor="' + anchor + '"]');
+      if ($section.length === 0) return;
+
+      var nextY =  $(window).scrollTop() + $section[0].getBoundingClientRect().y;
+      window.scrollTo(0, nextY);
     });
 
     // Set Copyright to the current year
