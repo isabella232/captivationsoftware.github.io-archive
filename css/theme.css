@@ -118,6 +118,7 @@
   color: #FFFFFF;
   background-color: #63C23E;
   border-color: #63C23E;
+  cursor: default;
 }
 
 .background-overlay {

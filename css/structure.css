@@ -289,7 +289,7 @@ img.icon {
 }
 
 .required.indicator {
-  padding: 25px 30px;
+  padding: 0;
 }
 
 .form-group .btn {

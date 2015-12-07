@@ -95,6 +95,8 @@
           data: $form.serialize(),
           dataType: 'json',
           success: function() {
+            // remove event listeners and update button
+            $form.find('input').off('input change');
             $button.off('click')
               .removeClass('error')
               .addClass('success')
