@@ -184,12 +184,12 @@ a:hover {
 }
 
 .capabilities ul {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .capabilities ul li {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 25px;
 }
 
 .footer {
@@ -332,6 +332,7 @@ label.required::after {
   font-style: normal;
   width: 20px;
   position: absolute;
+  font-weight: 600;
 }
 
 .required.indicator:before {
@@ -340,7 +341,7 @@ label.required::after {
 }
 
 label.required:after {
-  line-height: 60px;
+  line-height: 58px;
   right: 0;
   top: 0;
 }
