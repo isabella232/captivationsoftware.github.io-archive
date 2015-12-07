@@ -74,8 +74,8 @@
   color: #F7A700;
 }
 
-.dark-bg .btn:hover,
-.light-bg .btn:hover {
+.dark-bg .btn:active,
+.light-bg .btn:active {
   color: #FFFFFF;
   border-color: #F7A700;
   background-color: #F7A700;
