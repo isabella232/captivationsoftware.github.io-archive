@@ -317,7 +317,7 @@ label.required::after {
   content: "*";
   font-size: 30px;
   font-style: normal;
-  line-height: 60px;
+  line-height: 64px;
   position: absolute;
   right: -5px;
   top: 0;

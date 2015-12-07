@@ -108,6 +108,18 @@
 
 /* Miscellaneous */
 
+.btn.error, .btn.error:hover {
+  color: #FFFFFF;
+  background-color: #D64638;
+  border-color: #D64638;
+}
+
+.btn.success, .btn.success:hover {
+  color: #FFFFFF;
+  background-color: #63C23E;
+  border-color: #63C23E;
+}
+
 .background-overlay {
   background-image: url('../images/stock.jpg');
 }

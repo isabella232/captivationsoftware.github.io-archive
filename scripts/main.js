@@ -47,6 +47,7 @@
         });
 
         $('form')[0].reset();
+        $('button').prop('disabled', true);
       }
     });
 
@@ -93,8 +94,15 @@
           method: 'POST',
           data: $form.serialize(),
           dataType: 'json',
-          success: console.log,
-          error: console.error
+          success: function() {
+            $button.off('click')
+              .removeClass('error')
+              .addClass('success')
+              .text('Sent');
+          },
+          error: function() {
+            $button.addClass('error').text('Try Again');
+          }
       });
 
     });
