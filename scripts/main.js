@@ -51,6 +51,10 @@
       }
     });
 
+    function resetForm() {
+      $('form')[0].reset();
+    }
+
     function toggleSticky(index1, index2) {
       $('.sticky').toggleClass('invisible', index1 == 0 || index2 == 0)
     }
@@ -110,11 +114,6 @@
             $button.removeClass('invisible').addClass('error').text('Try Again');
           }
       });
-
-      function resetForm() {
-        $('form')[0].reset();
-      }
-
     });
   });
 })(jQuery);
