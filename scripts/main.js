@@ -76,7 +76,7 @@
       var $form = $input.closest('form');
 
       var missingRequired = false;
-      $form.find('.required :input').each(function(i, input) {
+      $form.find('.required :input:visible').each(function(i, input) {
         if (input.value === '') missingRequired = true;
       });
       $form.find('button').prop('disabled', missingRequired);
@@ -87,7 +87,16 @@
       if ($button.is(':disabled')) return;
 
       var $form = $button.closest('form');
-      console.log($form);
+
+      $.ajax({
+          url: "//formspree.io/info@captivationsoftware.com",
+          method: 'POST',
+          data: $form.serialize(),
+          dataType: 'json',
+          success: console.log,
+          error: console.error
+      });
+
     });
   });
 })(jQuery);
