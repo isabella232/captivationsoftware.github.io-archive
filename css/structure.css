@@ -224,8 +224,8 @@ img.icon {
 }
 
 .contact {
-  padding-top: 0;
-  font-weight: normal;
+  font-weight: 500;
+  padding: 0;
 }
 
 .sticky {
@@ -282,38 +282,70 @@ img.icon {
   font-size: 14px;
 }
 
-.form-control {
-  border-radius: 0;
-  margin: 7.5px 0;
-  height: 45px;
-  font-size: 16px;
+.form-group .btn {
+  margin: 10px 0px;
+  background-color: transparent;
 }
 
-.form-control[required] {
-  border-color: solid 2px red;
+.form-control {
+  border-radius: 0;
+  margin: 4px 0;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  font-style: normal;
+}
+
+.required .form-control {
+  padding-right: 30px;
+}
+
+label.required::after {
+  bottom: 0;
+  color: #f7a700;
+  content: "*";
+  font-size: 30px;
+  font-style: normal;
+  line-height: 60px;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  width: 20px;
 }
 
 textarea.form-control {
   resize: none;
-  height: 180px;
+  height: 150px;
 }
 
-.contact .form-control {
-  width: calc(100% + 15px);
+form label {
+  display: block;
+  width: calc(100% + 22px);
+  max-width: none;
 }
 
 ::-webkit-input-placeholder {
-    font-style: italic;
+  font-style: italic;
+  font-weight: 600;
 }
 
 :-moz-placeholder {
   font-style: italic;
+  font-weight: 600;
 }
 
 ::-moz-placeholder {
   font-style: italic;
+  font-weight: 600;
 }
 
 :-ms-input-placeholder {
   font-style: italic;
+  font-weight: 600;
+}
+
+.placeholderjs {
+  font-style: italic;
+  font-weight: 600;
 }
