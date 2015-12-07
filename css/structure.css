@@ -282,6 +282,10 @@ img.icon {
   font-size: 14px;
 }
 
+.required.indicator {
+  padding: 25px 30px;
+}
+
 .form-group .btn {
   margin: 10px 0px;
   background-color: transparent;

@@ -33,6 +33,10 @@
     margin-right: 5px;
   }
 
+  .required.indicator {
+    padding: 0;
+  }
+
   .sticky.footer .menu li.active .text {
     margin-right: 0;
   }
