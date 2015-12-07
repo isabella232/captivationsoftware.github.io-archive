@@ -293,13 +293,13 @@ img.icon {
 }
 
 .form-group .btn {
-  margin: 10px 0px;
+  margin: 12px 0px;
   background-color: transparent;
 }
 
 .form-control {
   border-radius: 0;
-  margin: 4px 0;
+  margin: 5px 0;
   height: 45px;
   font-size: 16px;
   font-weight: 600;
@@ -311,29 +311,30 @@ img.icon {
   padding-right: 30px;
 }
 
-label.required::after {
-  bottom: 0;
-  color: #f7a700;
-  content: "*";
-  font-size: 30px;
-  font-style: normal;
-  line-height: 64px;
-  position: absolute;
-  right: -5px;
-  top: 0;
-  width: 20px;
-}
-
 textarea.form-control {
   resize: none;
-  height: 150px;
+  height: 110px;
 }
 
 form label {
   display: block;
   width: calc(100% + 22px);
   max-width: none;
+  position: relative;
 }
+
+label.required::after {
+  color: #f7a700;
+  content: "*";
+  font-size: 30px;
+  font-style: normal;
+  line-height: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
 
 ::-webkit-input-placeholder {
   font-style: italic;
