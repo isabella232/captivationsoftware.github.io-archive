@@ -88,7 +88,7 @@
       if ($button.is(':disabled')) return;
 
       var $form = $button.closest('form');
-
+      $button.addClass('invisible');
       $.ajax({
           url: "//formspree.io/info@captivationsoftware.com",
           method: 'POST',
@@ -98,12 +98,13 @@
             // remove event listeners and update button
             $form.find('input').off('input change');
             $button.off('click')
-              .removeClass('error')
+              .removeClass('error invisible')
               .addClass('success')
-              .text('Sent');
+              .text('Sent')
+              .show();
           },
           error: function() {
-            $button.addClass('error').text('Try Again');
+            $button.removeClass('invisible').addClass('error').text('Try Again');
           }
       });
 
