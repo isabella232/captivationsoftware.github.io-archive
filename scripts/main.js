@@ -45,6 +45,8 @@
             bottom: window.innerHeight / 2 - 80
           });
         });
+
+        $('form')[0].reset();
       }
     });
 
@@ -68,5 +70,24 @@
 
     // Set Copyright to the current year
     $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software, LLC');
+
+    $('form :input').on('input change', function(e) {
+      var $input = $(e.currentTarget);
+      var $form = $input.closest('form');
+
+      var missingRequired = false;
+      $form.find('.required :input').each(function(i, input) {
+        if (input.value === '') missingRequired = true;
+      });
+      $form.find('button').prop('disabled', missingRequired);
+    });
+
+    $('form button').on('click', function(e) {
+      var $button = $(e.currentTarget);
+      if ($button.is(':disabled')) return;
+
+      var $form = $button.closest('form');
+      console.log($form);
+    });
   });
 })(jQuery);
