@@ -48,7 +48,8 @@
 
         $('button').prop('disabled', true);
 
-        $('body').css('opacity', '1');
+        // help with the flash of unstyled content
+        $('.background-overlay').css('opacity', '0.1');
       }
     });
 
