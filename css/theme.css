@@ -134,6 +134,10 @@
 
 /* Miscellaneous */
 
+body {
+  background: #F7A700;
+}
+
 .background-overlay {
   background-image: url('../images/stock.jpg');
 }

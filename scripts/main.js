@@ -47,6 +47,8 @@
         });
 
         $('button').prop('disabled', true);
+
+        $('body').css('opacity', '1');
       }
     });
 
