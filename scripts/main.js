@@ -46,14 +46,9 @@
           });
         });
 
-        resetForm();
         $('button').prop('disabled', true);
       }
     });
-
-    function resetForm() {
-      $('form')[0].reset();
-    }
 
     function toggleSticky(index1, index2) {
       $('.sticky').toggleClass('invisible', index1 == 0 || index2 == 0)
@@ -91,8 +86,6 @@
     // Send email
     $('form button').on('click', function(e) {
       var $button = $(e.currentTarget);
-      if ($button.is(':disabled')) return;
-
       var $form = $button.closest('form');
       $button.addClass('active').text('Sending...');
       $.ajax({
@@ -102,8 +95,8 @@
           dataType: 'json',
           success: function() {
             // remove event listeners and update button
-            $form.find(':input').off();
-            resetForm();
+            $form.find(':input').off().val('');
+
             $button.off('click')
               .removeClass('error active')
               .addClass('success')

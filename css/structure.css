@@ -3,18 +3,22 @@ body {
   font-size: 18px;
 }
 
+* {
+  outline: none !important;
+}
+
 .row {
   position: relative;
 }
 
 .hero {
-  margin: 40px auto;
-  width: 24em;
+  margin: 60px auto 0;
+  width: 22em;
 }
 
 .hero .text {
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2.322em;
   line-height: 0.7;
   display: inline-block;
   padding: 0;
@@ -38,7 +42,8 @@ body {
 
 h1 {
   font-weight: 800;
-  margin-bottom: 25px;
+  margin: 30px 0;
+  font-weight: 700;
 }
 
 h2 {
@@ -48,8 +53,9 @@ h2 {
   margin: 0;
 }
 
-h1 + p {
-  padding-top: 0;
+h1 + p, p {
+  padding: 0;
+  margin: 0 0 30px;
 }
 
 h2 + p {
@@ -58,7 +64,6 @@ h2 + p {
 }
 
 p {
-  padding: 10px 0;
   font-weight: 600;
 }
 
@@ -77,13 +82,6 @@ a:visited,
 a:active,
 a:hover {
   text-decoration: underline;
-}
-
-.vertically-centered {
-  position: relative;
-  transform: translateY(-50%);
-  top: 50%;
-  margin-top: -10px;
 }
 
 .solution.row {
@@ -109,16 +107,16 @@ a:hover {
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 15px 0;
+  margin: 0 0 30px;
   box-shadow: none;
   text-decoration: none;
   min-width: 220px;
 }
 
-.form-group button.btn[disabled] {
-  opacity: 0.3;
-  pointer-events: none;
-  cursor: not-allowed;
+.form-group .btn[disabled] {
+  opacity: 1.0;
+  cursor: default;
+  pointer-events: all;
 }
 
 .glyphicon {
@@ -127,7 +125,6 @@ a:hover {
 }
 
 .glyphicon-chevron-down, .glyphicon-chevron-up {
-  top: calc(100% - 60px);
   left: calc(50% - 15px);
   text-align: center;
   cursor: pointer;
@@ -215,8 +212,12 @@ a:hover {
   line-height: 30px;
 }
 
-.footer .glyphicon {
+.footer .glyphicon-chevron-down {
   top: 0;
+}
+
+.footer .glyphicon-chevron-up {
+  top: -10px;
 }
 
 img.logo-mark {
@@ -319,6 +320,10 @@ textarea.form-control {
   height: 110px;
 }
 
+form {
+  margin-top: -10px;
+}
+
 form label {
   display: block;
   width: calc(100% + 22px);
@@ -368,7 +373,7 @@ label.required:after {
   font-weight: 600;
 }
 
-.placeholderjs {
-  font-style: italic;
+.placeholdersjs {
+  font-style: italic !important;
   font-weight: 600;
 }

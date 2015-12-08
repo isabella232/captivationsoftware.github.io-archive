@@ -62,18 +62,18 @@
 }
 
 .light-bg h1,
-.light-bg .btn,
 .light-bg a,
 .light-bg .required,
 .light-bg .menu ul li.active a,
 .dark-bg h1,
-.dark-bg .btn,
 .dark-bg a,
 .dark-bg .required,
 .dark-bg .menu ul li.active a {
   color: #F7A700;
 }
 
+.dark-bg .btn:hover,
+.light-bg .btn:hover,
 .dark-bg .btn.active,
 .light-bg .btn.active,
 .dark-bg .btn:active,
@@ -82,6 +82,30 @@
   border-color: #F7A700;
   background-color: #F7A700;
 }
+
+
+.dark-bg .btn,
+.light-bg .btn,
+.dark-bg .btn[disabled]:hover,
+.light-bg .btn[disabled]:hover {
+  background-color: transparent;
+  color: #F7A700;
+  border-color:  #F7A700;
+}
+
+.light-bg .btn.error, .light-bg .btn.error:hover {
+  color: #FFFFFF;
+  background-color: #DC4242;
+  border-color: #DC4242;
+}
+
+.light-bg .btn.success, .light-bg .btn.success:hover {
+  color: #FFFFFF;
+  background-color: #4BB324;
+  border-color: #4BB324;
+  cursor: default;
+}
+
 
 .dark-bg .menu ul li a .circle,
 .light-bg .menu ul li a .circle {
@@ -109,19 +133,6 @@
 }
 
 /* Miscellaneous */
-
-.btn.error, .btn.error:hover {
-  color: #FFFFFF;
-  background-color: #D64638;
-  border-color: #D64638;
-}
-
-.btn.success, .btn.success:hover {
-  color: #FFFFFF;
-  background-color: #63C23E;
-  border-color: #63C23E;
-  cursor: default;
-}
 
 .background-overlay {
   background-image: url('../images/stock.jpg');
