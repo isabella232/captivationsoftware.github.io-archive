@@ -127,6 +127,7 @@
   behavior: url('PIE.htc');
   background-color: #F38B20;
   background-image: linear-gradient(to right bottom, #EBA009 33%,  #F38B20 100%);
+  -pie-background: linear-gradient(to right bottom, #EBA009 33%, #F38B20 100%); /*ie 6-9 via PIE*/
 }
 
 .orange-bg .glyphicon {
