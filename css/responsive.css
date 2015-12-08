@@ -16,8 +16,8 @@
 
 @media (max-width: 991px) {
   .content .main.container {
-      margin-top: 20px;
-      margin-bottom: 50px;
+      margin-top: 0;
+      margin-bottom: 0;
   }
 
   .section .menu {
@@ -48,7 +48,7 @@
 
   h1 {
     font-size: 28px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   p {
@@ -62,7 +62,6 @@
 
   .solution.row {
     height: auto;
-    margin-bottom: 30px;
   }
 
   .solution.row:last-child {
@@ -88,7 +87,7 @@
     padding: 0 30px;
   }
 
-  .capabilities ul {
+  ul {
     margin-bottom: 30px;
   }
 
