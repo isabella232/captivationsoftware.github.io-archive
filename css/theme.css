@@ -124,6 +124,7 @@
 
 /* Orange Theme */
 .orange-bg {
+  behavior: url('PIE.htc');
   background-color: #F38B20;
   background-image: linear-gradient(to right bottom, #EBA009 33%,  #F38B20 100%);
 }

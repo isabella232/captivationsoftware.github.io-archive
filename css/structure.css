@@ -102,6 +102,7 @@ a:hover {
 .btn:visited,
 .btn:active,
 .btn:hover {
+  behavior: url('PIE.htc');
   border: solid 3px;
   border-radius: 0;
   padding: 12px;
@@ -170,6 +171,7 @@ a:hover {
 }
 
 .menu ul li a .circle {
+  behavior: url('PIE.htc');
   display: inline-block;
   height: 13px;
   width: 13px;
@@ -303,6 +305,7 @@ img.icon {
 }
 
 .form-control {
+  behavior: url('PIE.htc');
   border-radius: 0;
   margin: 5px 0;
   height: 45px;
