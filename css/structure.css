@@ -1,7 +1,6 @@
 body {
   font-family: "Proxima Nova", Arial, sans-serif;
   font-size: 18px;
-  transition: opacity .75s ease-in;
 }
 
 * {
