@@ -4,7 +4,7 @@
     width: 960px;
   }
 
-  .section .menu {
+  .section .menu[style] {
     position: absolute !important;
     top: calc(50%) !important;
     left: inherit !important;
@@ -28,8 +28,8 @@
   }
 
   .section .menu {
-    margin-top: calc(50% - 80px);
-    margin-bottom: calc(50% - 80px);
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 
   .menu ul li {
