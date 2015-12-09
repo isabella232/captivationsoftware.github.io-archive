@@ -6,7 +6,7 @@
 
   .section .menu[style] {
     position: absolute !important;
-    top: calc(50% - 90px) !important;
+    top: 50% !important;
     left: inherit !important;
   }
 
