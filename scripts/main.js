@@ -1,4 +1,8 @@
 (function($) {
+
+  // upfront configuration
+  $.support.cors = true;
+
   $(document).ready(function() {
     var templates = {
       menu: $('#menu-template').html(),
@@ -92,7 +96,7 @@
       var $form = $button.closest('form');
       $button.addClass('active').text('Sending...');
       $.ajax({
-          url: "//formspree.io/info@captivationsoftware.com",
+          url: "https://formspree.io/info@captivationsoftware.com",
           method: 'POST',
           data: $form.serialize(),
           dataType: 'json',
