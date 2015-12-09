@@ -218,7 +218,7 @@ a:hover {
 }
 
 .footer .glyphicon-chevron-up {
-  top: -10px;
+  top: -5px;
 }
 
 img.logo-mark {
@@ -255,7 +255,7 @@ img.icon {
   width: 156px;
   height: 25px;
   margin-left: 0;
-  margin-top: initial;
+  margin-top: inherit;
 }
 
 .sticky.footer .menu {

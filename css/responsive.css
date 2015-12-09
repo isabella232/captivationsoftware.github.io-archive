@@ -7,7 +7,7 @@
   .section .menu {
     position: absolute !important;
     top: calc(50%) !important;
-    left: initial !important;
+    left: inherit !important;
   }
 
   h1 {
