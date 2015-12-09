@@ -1,8 +1,5 @@
 (function($) {
 
-  // upfront configuration
-  $.support.cors = true;
-
   $(document).ready(function() {
     var templates = {
       menu: $('#menu-template').html(),
