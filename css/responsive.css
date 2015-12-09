@@ -28,8 +28,8 @@
   }
 
   .section .menu {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: calc(50% - 90px);
+    margin-bottom: calc(50% - 90px);
   }
 
   .menu ul li {
