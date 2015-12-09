@@ -95,6 +95,7 @@
       superagent
         .post('//formspree.io/info@captivationsoftware.com')
         .send($form.serialize())
+        .withCredentials()
         .end(function(err, res) {
           if (err || res.status !== 200) {
             $button.removeClass('active').addClass('error').text('Try Again');
