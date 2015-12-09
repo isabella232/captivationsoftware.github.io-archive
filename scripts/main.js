@@ -99,6 +99,7 @@
           url: '//formspree.io/info@captivationsoftware.com',
           method: 'POST',
           data: $form.serialize(),
+          dataType: 'json',
           success: function() {
             // remove event listeners and update button
             $form.find(':input').off().val('');
