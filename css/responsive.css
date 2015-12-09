@@ -4,7 +4,7 @@
     width: 960px;
   }
 
-  .section .menu[style] {
+  .section .menu, .section .menu[style] {
     position: absolute !important;
     top: 50% !important;
     left: inherit !important;
