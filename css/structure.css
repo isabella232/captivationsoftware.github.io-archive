@@ -378,11 +378,3 @@ label.required:after {
   font-style: italic !important;
   font-weight: 600;
 }
-
-.ie form {
-  display: none;
-}
-
-html.ie[style], html.ie body[style] {
-  overflow: visible !important;
-}

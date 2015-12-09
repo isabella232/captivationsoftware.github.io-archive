@@ -96,7 +96,7 @@
       var $form = $button.closest('form');
       $button.addClass('active').text('Sending...');
       $.ajax({
-          url: '//formspree.io/info@captivationsoftware.com',
+          url: 'http://formspree.io/info@captivationsoftware.com',
           method: 'POST',
           data: $form.serialize(),
           dataType: 'json',
@@ -107,9 +107,8 @@
             $button.off('click')
               .removeClass('error active')
               .addClass('success')
-              .text('Sent')
-              .show();
-          },
+              .text('Sent');
+            },
           error: function() {
             $button.removeClass('active').addClass('error').text('Try Again');
           }
