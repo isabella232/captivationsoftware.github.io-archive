@@ -1,5 +1,8 @@
 (function($) {
 
+  // upfront configuration
+  $.support.cors = true;
+
   $(document).ready(function() {
     var templates = {
       menu: $('#menu-template').html(),
@@ -92,23 +95,24 @@
       var $button = $(e.currentTarget);
       var $form = $button.closest('form');
       $button.addClass('active').text('Sending...');
-      superagent
-        .post('//formspree.io/info@captivationsoftware.com')
-        .send($form.serialize())
-        .withCredentials()
-        .end(function(err, res) {
-          if (err || res.status !== 200) {
-            $button.removeClass('active').addClass('error').text('Try Again');
-          } else {
+      $.ajax({
+          url: '//formspree.io/info@captivationsoftware.com',
+          method: 'POST',
+          data: $form.serialize(),
+          success: function() {
             // remove event listeners and update button
             $form.find(':input').off().val('');
 
             $button.off('click')
               .removeClass('error active')
               .addClass('success')
-              .text('Sent');
+              .text('Sent')
+              .show();
+          },
+          error: function() {
+            $button.removeClass('active').addClass('error').text('Try Again');
           }
-        });
+      });
     });
   });
 })(jQuery);
