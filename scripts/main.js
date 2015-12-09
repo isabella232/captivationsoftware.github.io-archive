@@ -50,7 +50,7 @@
         $('button').prop('disabled', true);
 
         // help with the flash of unstyled content
-        $('.background-overlay').css('opacity', '0.1');
+        $('.fouc').removeClass('fouc');
       }
     });
 
