@@ -109,6 +109,6 @@
     //         $button.removeClass('active').addClass('error').text('Try Again');
     //       }
     //   });
-    });
+    // });
   });
 })(jQuery);
