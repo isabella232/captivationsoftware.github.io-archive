@@ -19,7 +19,6 @@
       loopHorizontal: false,
       controlArrows: false,
       verticalCentered: true,
-      paddingBottom: '60px',
       responsiveHeight: 600,
       responsiveWidth: 992,
       fixedElements: '.sticky',

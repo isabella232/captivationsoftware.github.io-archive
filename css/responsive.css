@@ -4,6 +4,10 @@
     width: 960px;
   }
 
+  .main.container {
+    padding-bottom: 60px;
+  }
+
   .section .menu, .section .menu[style] {
     position: absolute !important;
     top: 50% !important;
