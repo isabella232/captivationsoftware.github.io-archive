@@ -32,8 +32,8 @@
   }
 
   .section .menu {
-    margin-top: calc(50% - 90px);
-    margin-bottom: calc(50% - 90px);
+    margin: 0;
+    padding: calc(50% + 90px) 0;
   }
 
   .menu ul li {
