@@ -92,7 +92,7 @@
       var $form = $button.closest('form');
       $button.addClass('active').text('Sending...');
       $.ajax({
-          url: 'http://formspree.io/info@captivationsoftware.com',
+          url: '//formspree.io/info@captivationsoftware.com',
           method: 'POST',
           data: $form.serialize(),
           dataType: 'json',
