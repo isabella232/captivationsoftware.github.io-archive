@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--[if gte IE 8]>
-<html lang="en" class="ie">
-<![endif]-->
-<!--[if !IE]> -->
 <html lang="en">
-<!-- <![endif]-->
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +23,12 @@
     document.documentElement.className = 'fouc';
   </script>
 </head>
+<!--[if gte IE 8]>
+<body class="ie">
+<![endif]-->
+<!--[if !IE]> -->
 <body>
+<!-- <![endif]-->
   <script type="text/template" id="menu-template">
     <nav class="menu col-xs-1 col-sm-2">
       <ul class="list-unstyled">
