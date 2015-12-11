@@ -40,7 +40,10 @@
 
         $('.section').each(function(i, section) {
           var $section = $(section);
-          $section.find('.menu').fixTo($section);
+          $section.find('.menu').fixTo($section, {
+            top: 180,
+            bottom: 180
+          });
         });
 
         $('button').prop('disabled', true);
