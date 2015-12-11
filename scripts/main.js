@@ -46,6 +46,7 @@
           });
         });
 
+        $('form')[0].reset();
         $('button').prop('disabled', true);
 
         // help with the flash of unstyled content
@@ -85,7 +86,7 @@
       });
       $form.find('button').prop('disabled', missingRequired);
     });
-    
+
     // Send email
     $('form button').on('click', function(e) {
       var $button = $(e.currentTarget);
