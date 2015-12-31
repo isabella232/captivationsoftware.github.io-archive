@@ -41,8 +41,7 @@
         $('.section').each(function(i, section) {
           var $section = $(section);
           $section.find('.menu').fixTo($section, {
-            top: 180,
-            bottom: 180
+            top: 120
           });
         });
 
