@@ -5,7 +5,7 @@
 <body class="ie">
 <![endif]-->
 <!--[if !IE]> -->
-<body>
+<body class="animated fadeIn">
 <!-- <![endif]-->
   <script type="text/template" id="menu-template">
     <nav class="menu col-xs-1 col-sm-2">
@@ -50,7 +50,6 @@
       <h1>We are proud of the work we do, and we value the relationships we build.</h1>
       <p><em>Our proven track record and technical expertise makes us confident you will see the Captivation Software difference.</em></p>
       <p><em>Our philosophy is simple: Your goals become our goals. Think of us as partners in your success.</em></p>
-      <a href="#contact" class="btn">Request Consultation</a>
     </div>
   </script>
 
@@ -176,24 +175,35 @@
   <div id="fullpage">
     <div class="orange-bg landing section">
       <div class="background-overlay"></div>
+      <div class="header">
+        <img class="first brand" src="images/logo-white.png" alt="Captivation Software" />
+        <span class="hidden-xs hidden-sm">
+          <a href="#contact" class="btn">Get Started!</a>
+        </span>
+      </div>
       <div class="main container">
         <div class="row">
-          <div class="col-xs-12 text-center">
-            <img class="logo-mark" src="images/mark.png" alt="Captivation Software" />
-          </div>
           <div class="col-xs-12">
-            <div class="hero">
-              <span class="orange text">PROBLEM SOLVING</span>
-              <span class="orange text">IS WHAT WE DO</span>
-              <span class="white text">SOFTWARE IS HOW</span>
-              <span class="white text">WE DO IT</span>
+            <div class="hero" >
+              <div class="animated slideInRight">
+                <span class="white text">
+                  IT'S TIME TO LET THE<br />
+                  BEST DEVELOPERS IN AMERICA<br />
+                  BUILD YOUR SOFTWARE
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer container hidden-xs hidden-sm visible-md visible-lg">
+      <div class="footer container">
         <div class="row">
-          <span class="glyphicon glyphicon-chevron-down"></span>
+          <div class="hidden-xs hidden-sm visible-md visible-lg">
+            <span class="glyphicon glyphicon-chevron-down animated hidden"></span>
+          </div>
+          <div class="visible-xs visible-sm hidden-md hidden-lg">
+            <a href="#contact" class="btn">Get Started!</a>
+          </div>
         </div>
       </div>
     </div>

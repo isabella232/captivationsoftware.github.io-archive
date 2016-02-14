@@ -48,8 +48,10 @@
         $('form')[0].reset();
         $('button').prop('disabled', true);
 
-        // help with the flash of unstyled content
-        $('.fouc').removeClass('fouc');
+        $('.hero').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+          $('.hidden.animated.glyphicon-chevron-down').removeClass('hidden').addClass('bounceInUp');
+        });
+
       }
     });
 
@@ -60,7 +62,8 @@
     // Initialize responsive font sizes
     $('body').flowtype({
       minimum: 300,
-      maximum: 1200
+      maximum: 1200,
+      minFont: 12
     });
 
     $('.glyphicon-chevron-down').on('click', function() {

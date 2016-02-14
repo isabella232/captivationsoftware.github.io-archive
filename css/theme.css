@@ -72,6 +72,17 @@
   color: #F7A700;
 }
 
+.orange-bg .btn {
+  color: #FFFFFF;
+}
+
+.orange-bg .btn:hover {
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #F7A700;
+}
+
+
 .dark-bg .btn:hover,
 .light-bg .btn:hover,
 .dark-bg .btn.active,
@@ -82,7 +93,6 @@
   border-color: #F7A700;
   background-color: #F7A700;
 }
-
 
 .dark-bg .btn,
 .light-bg .btn,
@@ -135,7 +145,7 @@
 /* Miscellaneous */
 
 body {
-  background: #F7A700;
+  background: #dbab56;
 }
 
 .background-overlay {
