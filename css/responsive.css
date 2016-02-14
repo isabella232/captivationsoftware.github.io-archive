@@ -47,6 +47,10 @@
     top: 100%;
   }
 
+  .centerable.section {
+    text-align: center;
+  }
+
   .section .menu {
     margin: 0;
     padding: 100px 0;
