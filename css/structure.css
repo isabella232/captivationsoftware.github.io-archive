@@ -26,6 +26,10 @@ body {
   padding: 50px 0;
 }
 
+.section + .section {
+  margin-top: -1px;
+}
+
 .header {
   position: fixed;
   top: 0;
