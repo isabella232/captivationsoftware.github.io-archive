@@ -23,11 +23,10 @@ body {
 
 .section {
   position: relative;;
-  z-index: 2;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
-.landing .header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -37,15 +36,27 @@ body {
   z-index: 0;
 }
 
-.landing .header .btn,
-.landing .header .btn:link,
-.landing .header .btn:visited,
-.landing .header .btn:active,
-.landing .header .btn:hover {
+.header .btn,
+.header .btn:link,
+.header .btn:visited,
+.header .btn:active,
+.header .btn:hover {
   margin: 15px 0;
   min-width: auto;
   padding-left:15px;
   padding-right: 15px;
+}
+
+.pushing.brand {
+  display: none;
+}
+
+.push-header .brand {
+  display: none;
+}
+
+.push-header .pushing.brand {
+  display: inline-block;
 }
 
 .landing .footer {
@@ -76,7 +87,7 @@ body {
   background-size: cover;
   bottom: 0;
   left: 0;
-  opacity: 0.7;
+  opacity: 0.6;
   position: absolute;
   right: 0;
   top: 0;
@@ -272,6 +283,10 @@ img.icon {
   padding-top: 30px;
   min-height: 25%;
   line-height: inherit;
+}
+
+.contact.section {
+  z-index: 1;
 }
 
 .contact {
