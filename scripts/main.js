@@ -1,63 +1,69 @@
 (function($) {
 
   $(document).ready(function() {
-    var templates = {
-      menu: $('#menu-template').html(),
-      chooseUs: $('#choose-us-template').html(),
-      innovation: $('#innovation-template').html(),
-      integration: $('#integration-template').html(),
-      intelligence: $('#intelligence-template').html(),
-      jobs: $('#jobs-template').html(),
-      capabilities: $('#capabilities-template').html(),
-      contact: $('#contact-template').html()
-    };
-
-    // Initialize fullpage.js
-    $('#fullpage').fullpage({
-      anchors: ['', 'choose-us', 'solutions', 'capabilities', 'careers', 'contact'],
-      menu: '.menu',
-      loopHorizontal: false,
-      controlArrows: false,
-      verticalCentered: true,
-      responsiveHeight: 600,
-      responsiveWidth: 992,
-      fixedElements: '.sticky',
-      onLeave: toggleSticky,
-      afterLoad: toggleSticky,
-      afterResize: function() {
-        $('.section .menu').fixTo('refresh');
-      },
-      afterRender: function() {
-        // interpolate templates
-        $('.menu-content').replaceWith(templates.menu);
-        $('.choose-us-content').replaceWith(templates.chooseUs);
-        $('.innovation-content').replaceWith(templates.innovation);
-        $('.integration-content').replaceWith(templates.integration);
-        $('.intelligence-content').replaceWith(templates.intelligence);
-        $('.jobs-content').replaceWith(templates.jobs);
-        $('.capabilities-content').replaceWith(templates.capabilities);
-        $('.contact-content').replaceWith(templates.contact);
-
-        $('.section').each(function(i, section) {
-          var $section = $(section);
-          $section.find('.menu').fixTo($section, {
-            top: 120
-          });
-        });
-
-        $('form')[0].reset();
-        $('button').prop('disabled', true);
-
-        $('.hero').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-          $('.hidden.animated.glyphicon-chevron-down').removeClass('hidden').addClass('bounceInUp');
-        });
-
-      }
+    // autosize each section
+    $(window).on('load resize', function() {
+      $('.landing.section').css('minHeight', window.innerHeight - 150);
     });
 
-    function toggleSticky(index1, index2) {
-      $('.sticky').toggleClass('invisible', index1 == 0 || index2 == 0)
-    }
+
+    // var templates = {
+    //   menu: $('#menu-template').html(),
+    //   chooseUs: $('#choose-us-template').html(),
+    //   innovation: $('#innovation-template').html(),
+    //   integration: $('#integration-template').html(),
+    //   intelligence: $('#intelligence-template').html(),
+    //   jobs: $('#jobs-template').html(),
+    //   capabilities: $('#capabilities-template').html(),
+    //   contact: $('#contact-template').html()
+    // };
+    //
+    // // Initialize fullpage.js
+    // $('#fullpage2').fullpage({
+    //   anchors: ['', 'choose-us', 'solutions', 'capabilities', 'careers', 'contact'],
+    //   menu: '.menu',
+    //   loopHorizontal: false,
+    //   controlArrows: false,
+    //   verticalCentered: true,
+    //   responsiveHeight: 1,
+    //   responsiveWidth: 1,
+    //   fixedElements: '.sticky',
+    //   onLeave: toggleSticky,
+    //   afterLoad: toggleSticky,
+    //   afterResize: function() {
+    //     $('.section .menu').fixTo('refresh');
+    //   },
+    //   afterRender: function() {
+    //     // interpolate templates
+    //     $('.menu-content').replaceWith(templates.menu);
+    //     $('.choose-us-content').replaceWith(templates.chooseUs);
+    //     $('.innovation-content').replaceWith(templates.innovation);
+    //     $('.integration-content').replaceWith(templates.integration);
+    //     $('.intelligence-content').replaceWith(templates.intelligence);
+    //     $('.jobs-content').replaceWith(templates.jobs);
+    //     $('.capabilities-content').replaceWith(templates.capabilities);
+    //     $('.contact-content').replaceWith(templates.contact);
+    //
+    //     $('.section').each(function(i, section) {
+    //       var $section = $(section);
+    //       $section.find('.menu').fixTo($section, {
+    //         top: 120
+    //       });
+    //     });
+    //
+    //     $('form')[0].reset();
+    //     $('button').prop('disabled', true);
+    //
+    //     $('.hero').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    //       $('.hidden.animated.glyphicon-chevron-down').removeClass('hidden').addClass('bounceInUp');
+    //     });
+    //
+    //   }
+    // });
+    //
+    // function toggleSticky(index1, index2) {
+    //   $('.sticky').toggleClass('invisible', index1 == 0 || index2 == 0)
+    // }
 
     // Initialize responsive font sizes
     $('body').flowtype({
@@ -66,13 +72,13 @@
       minFont: 12
     });
 
-    $('.glyphicon-chevron-down').on('click', function() {
-      $.fn.fullpage.moveSectionDown();
-    });
-
-    $('.glyphicon-chevron-up, .footer .brand').on('click', function() {
-      $.fn.fullpage.moveTo('', 0);
-    });
+    // $('.glyphicon-chevron-down').on('click', function() {
+    //   $.fn.fullpage.moveSectionDown();
+    // });
+    //
+    // $('.glyphicon-chevron-up, .footer .brand').on('click', function() {
+    //   $.fn.fullpage.moveTo('', 0);
+    // });
 
     // Set Copyright to the current year
     $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software, LLC');

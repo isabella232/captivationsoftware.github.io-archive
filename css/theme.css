@@ -6,6 +6,14 @@
   color: #FFFFFF;
 }
 
+.white-bg {
+  background-color: #FFFFFF;
+}
+
+.white-bg h2 {
+  color: #F7A700;
+}
+
 /* Black Theme */
 .black-bg {
   background-color: #373737;
@@ -72,17 +80,6 @@
   color: #F7A700;
 }
 
-.orange-bg .btn {
-  color: #FFFFFF;
-}
-
-.orange-bg .btn:hover {
-  border-color: #FFFFFF;
-  background-color: #FFFFFF;
-  color: #F7A700;
-}
-
-
 .dark-bg .btn:hover,
 .light-bg .btn:hover,
 .dark-bg .btn.active,
@@ -132,24 +129,21 @@
   background-color: #FFB718;
 }
 
-/* Orange Theme */
-.orange-bg {
-  background-color: #F7A700;
-  background-image: linear-gradient(to right bottom, #EBA009 33%,  #F38B20 100%);
+.background-overlay {
+  background-image: url("../images/stock.jpg");
 }
 
-.orange-bg .glyphicon {
-  color: #FFFFFF;
+.landing .header .btn {
+  color: #F7A700;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-radius: 4px;
 }
 
 /* Miscellaneous */
 
 body {
-  background: #dbab56;
-}
-
-.background-overlay {
-  background-image: url('../images/stock.jpg');
+  background: #F7A700;
 }
 
 .sticky.footer {

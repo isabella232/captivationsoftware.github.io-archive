@@ -35,10 +35,16 @@
       padding-bottom: 30px;
   }
 
-
-  .section:first-child {
-      text-align: center;
+  .landing {
       overflow-x: hidden;
+  }
+
+  .landing .header {
+    text-align: center;
+  }
+
+  .landing .footer {
+    top: 100%;
   }
 
   .section .menu {
