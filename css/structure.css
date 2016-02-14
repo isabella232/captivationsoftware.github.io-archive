@@ -15,8 +15,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
-  line-height: 70px;
+  height: 80px;
+  line-height: 80px;
   padding: 0 15px;
 }
 
@@ -25,7 +25,7 @@ body {
 .header .btn:visited,
 .header .btn:active,
 .header .btn:hover {
-  margin: 10px 0;
+  margin: 15px 0;
   min-width: auto;
   padding-left:15px;
   padding-right: 15px;
