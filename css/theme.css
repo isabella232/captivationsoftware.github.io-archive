@@ -146,10 +146,6 @@ body {
   background: #F7A700;
 }
 
-.sticky.footer {
-  background-color: #333333;
-}
-
 .required.indicator:before,
 label.required::after {
   color: #F7A700;

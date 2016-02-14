@@ -2,20 +2,17 @@
 
   $(document).ready(function() {
     // autosize each section
-    var $landing = $('.landing.section'), $contact = $('.contact.section');
+    var $landing = $('.landing.section');
+    var $contact = $('.contact.section');
+    var $footer = $('.footer.section');
+
     $(window).on('load resize', function() {
-      var offset = 0;
-      if (window.innerWidth > 992) offset = $landing.next('.section').outerHeight();
-      $landing.css('minHeight', window.innerHeight - offset);
+      var landingOffset = 0;
+      if (window.innerWidth > 992) landingOffset = $landing.next('.section').outerHeight();
+      $landing.css('minHeight', window.innerHeight - landingOffset);
 
-      $contact.css('minHeight', window.innerHeight);
-    });
-
-    // Initialize responsive font sizes
-    $('body').flowtype({
-      minimum: 300,
-      maximum: 1200,
-      minFont: 12
+      var footerOffset = $footer.outerHeight();
+      $contact.css('minHeight', window.innerHeight - footerOffset);
     });
 
     // Set Copyright to the current year
