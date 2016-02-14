@@ -27,7 +27,7 @@
 
 @media (max-width: 991px) {
   .hero {
-    margin-top: 7.5em;
+    margin-top: 0;
   }
 
   .content .main.container {
