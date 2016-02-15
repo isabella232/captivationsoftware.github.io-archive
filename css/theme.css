@@ -84,6 +84,9 @@
   color: #F7A700;
 }
 
+
+.dark-bg .btn,
+.light-bg .btn,
 .dark-bg .btn:hover,
 .light-bg .btn:hover,
 .dark-bg .btn.active,
@@ -95,8 +98,8 @@
   background-color: #F7A700;
 }
 
-.dark-bg .btn,
-.light-bg .btn,
+.dark-bg .btn[disabled],
+.light-bg .btn[disabled],
 .dark-bg .btn[disabled]:hover,
 .light-bg .btn[disabled]:hover {
   background-color: transparent;

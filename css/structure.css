@@ -163,7 +163,7 @@ a:hover {
 .btn:active,
 .btn:hover {
   border: solid 3px;
-  border-radius: 0;
+  border-radius: 4px;
   padding: 12px;
   font-size: 15px;
   font-weight: bold;
@@ -171,7 +171,7 @@ a:hover {
   margin: 0 0 30px;
   box-shadow: none;
   text-decoration: none;
-  min-width: 220px;
+  min-width: 150px;
 }
 
 .form-group .btn[disabled] {
