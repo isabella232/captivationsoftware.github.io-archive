@@ -31,7 +31,7 @@ body {
   width: 100%;
   height: 80px;
   line-height: 80px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header .btn,
@@ -74,20 +74,22 @@ body {
 }
 
 .hero {
-  margin: 70px auto 0;
+  margin: 50% auto 0;
   text-align: center;
 }
 
 .hero .text {
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1;
   display: inline-block;
   padding: 0;
+  position: relative;
+  z-index: 3;
 }
 
 .background-overlay {
-  background-position: 55% 0;
+  background-position: 55% 60%;
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 0;
@@ -290,10 +292,6 @@ img.icon {
   padding-top: 30px;
   min-height: 25%;
   line-height: inherit;
-}
-
-.contact.section {
-  z-index: 3;
 }
 
 .contact {

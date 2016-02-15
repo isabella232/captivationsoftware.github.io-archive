@@ -14,12 +14,6 @@
 
       var footerOffset = $footer.outerHeight();
       $contact.css('minHeight', window.innerHeight - footerOffset);
-    }).on('pageshow load scroll', function() {
-
-      var isPushing = $window.scrollTop() > window.innerHeight - headerOffset() - landingOffset()
-        && $window.scrollTop() < $contact.offset().top;
-      $body.toggleClass('push-header', isPushing);
-
     });
 
     // Set Copyright to the current year

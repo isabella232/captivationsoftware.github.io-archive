@@ -147,11 +147,6 @@
   border-radius: 4px;
 }
 
-.push-header .header {
-  background-color: #FFFFFF;
-}
-
-
 .push-header .header .btn {
   background-color: #F7A700;
   border-color: #F7A700;
@@ -161,4 +156,8 @@
 .required.indicator:before,
 label.required::after {
   color: #F7A700;
+}
+
+.hero .text {
+  text-shadow: 0 0 5px rgba(51, 51, 51, 0.15);
 }
