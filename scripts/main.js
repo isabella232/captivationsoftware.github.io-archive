@@ -14,10 +14,10 @@
     });
 
     $window.on('pageshow load resize', function() {
-      $landing.height(window.innerHeight - landingOffset() - 99);
+      $landing.css('minHeight', window.innerHeight - landingOffset());
 
       var footerOffset = $footer.outerHeight();
-      $contact.height(window.innerHeight - footerOffset - 99);
+      $contact.css('minHeight', window.innerHeight - footerOffset);
     });
 
     // Set Copyright to the current year
