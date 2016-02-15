@@ -74,8 +74,12 @@ body {
 }
 
 .hero {
-  margin: 50% auto 0;
   text-align: center;
+  position: fixed;
+  z-index: 1;
+  width: 29em;
+  bottom: 33%;
+  right: 7.5%;
 }
 
 .hero .text {
@@ -92,6 +96,7 @@ body {
   background-position: 55% 60%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   bottom: 0;
   left: 0;
   opacity: 0.6;

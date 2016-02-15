@@ -9,6 +9,10 @@
     var $landing = $('.landing.section');
     var $contact = $('.contact.section');
 
+    $body.flowtype({
+      maxFont: 30
+    });
+
     $window.on('pageshow load resize', function() {
       $landing.css('minHeight', window.innerHeight - landingOffset());
 
