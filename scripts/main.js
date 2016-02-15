@@ -4,21 +4,21 @@
 
     var $window = $(window);
     var $body = $('body');
-    var $header = $('.header');
-    var $footer = $('.footer');
-    var $landing = $('.landing.section');
-    var $contact = $('.contact.section');
+    var $landing = $('.landing.section .background-overlay');
+    var $overview = $('.overview.section');
+    var $layout = $('.layout');
 
     $body.flowtype({
       maxFont: 30
     });
-    // 
-    // $window.on('pageshow load resize', function() {
-    //   $landing.css('minHeight', window.innerHeight - landingOffset());
-    //
-    //   var footerOffset = $footer.outerHeight();
-    //   $contact.css('minHeight', window.innerHeight - footerOffset);
-    // });
+
+    $window.on('pageshow load resize', function() {
+      var top = 'inherit';
+      if ($(window).width() > 992) {
+        top = $(window).innerHeight() - $overview.outerHeight();
+      }
+      $layout.css('top', top);
+    });
 
     // Set Copyright to the current year
     $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software, LLC');
@@ -59,15 +59,5 @@
           }
       });
     });
-
-    function landingOffset() {
-      var offset = 0;
-      if (window.innerWidth > 992) offset = $landing.next('.section').outerHeight();
-      return offset;
-    }
-
-    function headerOffset() {
-      return $header.outerHeight();
-    }
   });
 })(jQuery);
