@@ -12,10 +12,11 @@ body {
   outline: none !important;
 }
 
-.landing.section + .section {
+/*.landing.section + .section {
   padding-top: 40px;
-  padding-bottom: 10px;
-}
+  padding-bottom: 50px;
+  margin-top: -40px;
+}*/
 
 .section {
   position: relative;;
