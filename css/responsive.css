@@ -26,12 +26,18 @@
 }
 
 @media (max-width: 991px) {
+
   .hero {
-    margin-top: 60%;
+    left: 0;
+    right: 0;
+    margin-bottom: 10%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
   }
 
   .background-overlay {
-    background-attachment: scroll;
+    margin-top: 0;
   }
 
   .content .main.container {
