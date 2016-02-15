@@ -6,6 +6,10 @@
   color: #FFFFFF;
 }
 
+.orange-bg {
+  background-color: #F7A700;
+}
+
 .white-bg {
   background-color: #FFFFFF;
 }
@@ -149,12 +153,6 @@
   background-color: #F7A700;
   border-color: #F7A700;
   color: #FFFFFF;
-}
-
-/* Miscellaneous */
-
-body {
-  background: #F7A700;
 }
 
 .required.indicator:before,
