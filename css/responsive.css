@@ -95,16 +95,4 @@
     margin-bottom: 30px;
   }
 
-  .content.fp-section[style] {
-    padding-bottom: 0 !important;
-  }
-
-  .content.fp-section[style]:last-child {
-    padding-bottom: 90px !important;
-  }
-
-  .content.fp-section[style],
-  .content .fp-tableCell[style] {
-    height: auto !important;
-  }
 }
