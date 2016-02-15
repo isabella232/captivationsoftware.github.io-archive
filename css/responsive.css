@@ -30,6 +30,10 @@
     margin-top: 60%;
   }
 
+  .background-overlay {
+    background-attachment: scroll;
+  }
+
   .content .main.container {
       padding-top: 30px;
       padding-bottom: 30px;
@@ -94,5 +98,4 @@
   .capabilities ul {
     margin-bottom: 30px;
   }
-
 }
