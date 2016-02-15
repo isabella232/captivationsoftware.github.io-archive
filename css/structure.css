@@ -7,6 +7,10 @@ body {
   outline: none !important;
 }
 
+.landing {
+  padding: 0;
+}
+
 .landing ~ .section {
   z-index: 4;
 }
