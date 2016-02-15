@@ -12,13 +12,13 @@
     $body.flowtype({
       maxFont: 30
     });
-
-    $window.on('pageshow load resize', function() {
-      $landing.css('minHeight', window.innerHeight - landingOffset());
-
-      var footerOffset = $footer.outerHeight();
-      $contact.css('minHeight', window.innerHeight - footerOffset);
-    });
+    // 
+    // $window.on('pageshow load resize', function() {
+    //   $landing.css('minHeight', window.innerHeight - landingOffset());
+    //
+    //   var footerOffset = $footer.outerHeight();
+    //   $contact.css('minHeight', window.innerHeight - footerOffset);
+    // });
 
     // Set Copyright to the current year
     $('.copyright').html('&copy; ' + new Date().getFullYear() + ' Captivation Software, LLC');

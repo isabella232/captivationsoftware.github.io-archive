@@ -9,6 +9,7 @@ body {
 
 .landing.section {
   padding: 0;
+  height: 100%;
 }
 
 .landing.section ~ .section {
@@ -97,17 +98,19 @@ body {
 }
 
 .background-overlay {
-  background-position: 55% 60%;
+  /*background-position: 55% 60%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  bottom: 0;
-  left: 0;
+  background-attachment: fixed;*/
+  /*bottom: 0;
+  left: 0;*/
   opacity: 0.6;
-  position: absolute;
+  /*position: absolute;
   right: 0;
-  top: 0;
+  top: 0;*/
   z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
 
