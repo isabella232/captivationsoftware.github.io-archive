@@ -12,10 +12,6 @@ body {
   outline: none !important;
 }
 
-.landing.section {
-  z-index: 1;
-}
-
 .landing.section + .section {
   padding-top: 40px;
   padding-bottom: 10px;
@@ -37,7 +33,7 @@ body {
   width: 100%;
   height: 80px;
   line-height: 80px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .header .btn,
@@ -51,21 +47,27 @@ body {
   padding-right: 15px;
 }
 
-.pushing.brand {
+.push-header .brand-push, .push-header .symbol-push {
+  display: inline-block !important;
+}
+
+.push-header .brand, .push-header .symbol,
+.brand-push, .symbol-push {
   display: none;
 }
 
-.push-header .brand {
-  display: none;
+.brand, .brand-push {
+  height: 30px;
+  width: 188px;  
 }
 
-.push-header .pushing.brand {
-  display: inline-block;
+.symbol, .symbol-push {
+  height: 30px;
+  width: 30px;
 }
 
 .landing .footer {
   padding: 0;
-  z-index: 1;
 }
 
 .row {
@@ -290,21 +292,11 @@ img.icon {
 }
 
 .contact.section {
-  z-index: 1;
+  z-index: 2;
 }
 
 .contact {
   font-weight: 500;
-}
-
-.sticky {
-  position: fixed;
-  z-index: 10;
-}
-
-.sticky.nav {
-  right: 10px;
-  top: 200px;
 }
 
 .required {
