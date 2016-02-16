@@ -9,13 +9,15 @@
     var $layout = $('.layout');
 
     $body.flowtype({
-      maxFont: 30
+      maxFont: 30,
+      minFont: 14
     });
 
     $window.on('pageshow load resize', function() {
       var top = 'inherit';
       if ($(window).width() > 992) {
         top = $(window).innerHeight() - $overview.outerHeight();
+        if (top < 500) top = 500;
       }
       $layout.css('top', top);
     });
