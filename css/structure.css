@@ -30,7 +30,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -79,12 +79,25 @@ body {
 }
 
 .hero {
+  position: absolute;
+  right: 25%;
   text-align: center;
-  position: fixed;
+  top: 40%;
   z-index: 1;
-  width: 29em;
-  bottom: 33%;
-  right: 7.5%;
+}
+
+.hero h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.hero ul li {
+  display: none;
+}
+
+.hero ul li:first-child {
+  display: block;
+  font-size: 1em;
 }
 
 .hero .text {
@@ -112,11 +125,6 @@ body {
   height: 100%;
   z-index: 5;
 }
-
-.overview p {
-  margin: 0;
-}
-
 
 h1 {
   font-weight: 800;
