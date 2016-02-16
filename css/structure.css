@@ -86,19 +86,25 @@ body {
 .hero {
   position: absolute;
   text-align: center;
-  top: 335px;
+  top: 325px;
   width: 100%;
   z-index: 1;
 }
 
-.hero .text {
-  font-weight: 900;
-  font-size: 1.4em;
-  line-height: 1;
-  display: block;
+.hero h1, .hero h2 {
   padding: 0;
   position: relative;
   z-index: 3;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.hero h1 {
+  font-size: 1.4em;
+}
+
+.hero h2 {
+  font-size: 1.25em;
 }
 
 .background-overlay {
@@ -298,8 +304,8 @@ img.logo-mark {
 }
 
 img.icon {
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
 }
 
 .landing .footer {
