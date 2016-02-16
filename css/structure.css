@@ -75,37 +75,27 @@ body {
   padding: 0;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .row {
   position: relative;
 }
 
 .hero {
   position: absolute;
-  right: 25%;
   text-align: center;
-  top: 40%;
+  top: 350px;
+  width: 100%;
   z-index: 1;
-}
-
-.hero h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.hero ul li {
-  display: none;
-}
-
-.hero ul li:first-child {
-  display: block;
-  font-size: 1em;
 }
 
 .hero .text {
   font-weight: 900;
-  font-size: 1.8em;
+  font-size: 1.2em;
   line-height: 1;
-  display: inline-block;
+  display: block;
   padding: 0;
   position: relative;
   z-index: 3;
