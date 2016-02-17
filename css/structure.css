@@ -86,25 +86,18 @@ body {
 .hero {
   position: absolute;
   text-align: center;
-  top: 375px;
+  top: 350px;
   width: 100%;
   z-index: 1;
 }
 
-.hero h1, .hero h2 {
+.hero h1 {
   padding: 0;
   position: relative;
   z-index: 3;
   line-height: 1;
   font-weight: 900;
-}
-
-.hero h1 {
-  font-size: 1.4em;
-}
-
-.hero h2 {
-  font-size: 1.25em;
+  font-size: 1.75em;
 }
 
 .background-overlay {

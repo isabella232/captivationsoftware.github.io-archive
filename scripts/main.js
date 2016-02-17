@@ -10,7 +10,7 @@
 
     $body.flowtype({
       maxFont: 30,
-      minFont: 14
+      minFont: 10
     });
 
     $window.on('pageshow load resize', function() {
