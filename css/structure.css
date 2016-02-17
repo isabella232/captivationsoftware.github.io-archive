@@ -27,7 +27,7 @@ body {
 .section {
   margin-top: -1px;
   position: relative;
-  padding: 30px 0 15px;
+  padding: 30px 0;
 }
 
 .header {
@@ -169,15 +169,7 @@ a:hover {
 }
 
 .solution.row {
-  height: 150px;
-}
-
-.solution .col-xs-2 {
-  width: 20%;
-}
-
-.solution .col-xs-10 {
-  width: 80%;
+  padding: 30px 0 15px;
 }
 
 .btn,
@@ -306,6 +298,10 @@ img.logo-mark {
 img.icon {
   width: 100px;
   height: 100px;
+}
+
+.solution.row img.icon {
+  margin-bottom: 30px;
 }
 
 .landing .footer {

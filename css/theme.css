@@ -158,6 +158,10 @@ label.required::after {
   color: #FFFFFF;
 }
 
-.hero .text {
-  text-shadow: 0 0 5px rgba(51, 51, 51, 0.15);
+.solution.row {
+  border-bottom: dotted 1px rgba(51,51,51,0.2);
+}
+
+.solution.row:last-child {
+  border-bottom: 0;
 }

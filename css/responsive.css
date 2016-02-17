@@ -80,10 +80,6 @@
     margin-bottom: 30px;
   }
 
-  .solution.row {
-    height: auto;
-  }
-
   .solution.row:last-child {
     margin-bottom: 0;
   }
