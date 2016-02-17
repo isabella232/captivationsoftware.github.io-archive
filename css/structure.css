@@ -86,7 +86,7 @@ body {
 .hero {
   position: absolute;
   text-align: center;
-  top: 325px;
+  top: 375px;
   width: 100%;
   z-index: 1;
 }
@@ -304,8 +304,8 @@ img.logo-mark {
 }
 
 img.icon {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 
 .landing .footer {
