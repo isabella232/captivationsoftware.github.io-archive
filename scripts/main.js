@@ -13,11 +13,15 @@
       minFont: 10
     });
 
-    $window.on('pageshow load resize', function() {
-      var top = 'inherit';
-      if ($(window).width() > 992) {
+    $window.on('pageload resize load', function() {
+      var top = '';
+
+      var windowIsDesktop = $window.width() > 992;
+      var hasOverlap = $landing.outerHeight(true) + $overview.outerHeight() > $window.innerHeight();
+      if (windowIsDesktop && hasOverlap) {
         top = $(window).innerHeight() - $overview.outerHeight();
-        if (top < 500) top = 500;
+
+        if (top && top < 500) top = 500;
       }
       $layout.css('top', top);
     });
