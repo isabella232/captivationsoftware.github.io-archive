@@ -19,11 +19,10 @@
   .hero {
     left: 0;
     right: 0;
-    margin-bottom: 10%;
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 66%;
+    top: 72.5%;
   }
 
   .background-overlay {
