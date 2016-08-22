@@ -28,29 +28,19 @@
 }
 
 
-.black-bg ul li,
-.black-bg .menu ul li a {
+.black-bg ul li {
   color: #FFFFFF;
 }
 
 .black-bg h1,
 .black-bg .btn,
-.black-bg a,
-.black-bg .menu ul li.active a {
+.black-bg a {
   color: #F7A700;
 }
 
 .black-bg .btn:hover {
   color: #FFFFFF;
   border-color: #F7A700;
-  background-color: #F7A700;
-}
-
-.black-bg .menu ul li a .circle {
-  background-color: #FFFFFF;
-}
-
-.black-bg .menu ul li.active a .circle {
   background-color: #F7A700;
 }
 
@@ -68,19 +58,12 @@
   background-color: #EEEEEE;
 }
 
-.light-bg .menu ul li a,
-.dark-bg .menu ul li a {
-  color: #333333;
-}
-
 .light-bg h1,
 .light-bg a,
 .light-bg .required,
-.light-bg .menu ul li.active a,
 .dark-bg h1,
 .dark-bg a,
-.dark-bg .required,
-.dark-bg .menu ul li.active a {
+.dark-bg .required {
   color: #F7A700;
 }
 
@@ -120,20 +103,9 @@
   cursor: default;
 }
 
-
-.dark-bg .menu ul li a .circle,
-.light-bg .menu ul li a .circle {
-  background-color: #333333;
-}
-
 .dark-bg .glyphicon,
 .light-bg .glyphicon {
   color: #333333;
-}
-
-.dark-bg .menu ul li.active a .circle,
-.light-bg .menu ul li.active a .circle {
-  background-color: #FFB718;
 }
 
 .header {

@@ -23,7 +23,7 @@
         $landing.height(height - 80);
         $bgOverlayImg.css('clip', 'rect(0px, 2000000px, ' + (height + 50) + 'px, 0px)');
       } else {
-        $landing.height($bgOverlayImg.height());
+        $landing.height($bgOverlayImg.height() - 20);
       }
     });
 

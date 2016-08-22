@@ -11,6 +11,7 @@ body {
 .landing.section {
   height: 100%;
   padding: 80px 0 0;
+  overflow: hidden;
 }
 
 .landing.section ~ .section {
@@ -58,11 +59,17 @@ body {
 .header .btn:visited,
 .header .btn:active,
 .header .btn:hover {
-  margin: 15px 0;
+  margin: 0 0 2px;
   min-width: 0;
+  font-size: 13px;
+  font-weight: normal;
   width: auto;
   padding-left:12px;
   padding-right: 12px;
+}
+
+.header .menu li {
+  display: inline;
 }
 
 .brand-push, .symbol-push {
@@ -222,43 +229,6 @@ a:hover {
   font-size: 8px;
   font-weight: 600;
   display: block;
-}
-
-.menu {
-  margin-top: -80px;
-  position: absolute;
-  right: 10px;
-  padding: 0;
-}
-
-.menu ul li {
-  width: 100%;
-  line-height: 30px;
-  text-align: right;
-}
-
-.menu ul li a {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 1;
-  text-decoration: none;
-}
-
-.menu ul li a:hover {
-  text-decoration: none;
-}
-
-.menu ul li a .text {
-  margin-right: 10px;
-}
-
-.menu ul li a .circle {
-  display: inline-block;
-  height: 13px;
-  width: 13px;
-  border-radius: 13px;
-  margin-bottom: -1px;
 }
 
 .capabilities h2 {
