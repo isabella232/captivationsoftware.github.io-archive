@@ -5,11 +5,9 @@
     var $window = $(window);
     var $body = $('body');
     var $page = $body.find('.page');
-    var $landing = $('.landing');
-    var $bgOverlay = $landing.find('.background-overlay');
+    var $bgOverlay = $page.find('.background-overlay');
     var $bgOverlayImg = $bgOverlay.find('img');
-    var $overview = $('.overview');
-    var $layout = $('.layout');
+    var $hero = $bgOverlay.find('.hero');
 
     $body.flowtype({
       maxFont: 30,
@@ -20,12 +18,12 @@
       var isWide = $window.width() > 991;
 
       $page.height(isWide ? 0 : '')
-    //     var height = $window.height();
-    //     $landing.height(height - 80);
-    //     $bgOverlayImg.css('clip', 'rect(0px, 2000000px, ' + (height + 50) + 'px, 0px)');
-    //   } else {
-    //     $landing.height($bgOverlayImg.height() - 20);
-    //   }
+
+      var heroTop = '';
+      if (isWide) {
+        heroTop = Math.min($bgOverlayImg.height(), $window.height()) / 2;
+      }
+      $hero.css({top: heroTop});
     });
 
     // Set Copyright to the current year
