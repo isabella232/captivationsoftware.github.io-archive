@@ -10,6 +10,10 @@
 }
 
 @media (max-width: 991px) {
+  .background-overlay {
+    margin-top: -50px;
+  }
+
   h2 + p, h2 + ul {
     margin-bottom: 30px;
   }

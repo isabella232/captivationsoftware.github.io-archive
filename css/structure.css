@@ -30,7 +30,7 @@ body {
   height: 120px;
   margin-left: -0.5%;
   margin-top: -40px;
-  padding-top: 58px;
+  padding-top: 60px;
   transform: rotate(-1deg);
   width: 101%;
   z-index: 10;
@@ -82,6 +82,13 @@ body {
   transform: rotate(-0.5deg);
 }
 
+.overview-fixed {
+  position: absolute;
+  bottom: -30px;
+  height: 25%;
+  min-height: 200px;
+}
+
 .brand-push, .symbol-push {
   display: none;
 }
@@ -107,7 +114,7 @@ body {
 .hero {
   position: absolute;
   text-align: center;
-  top: 33%;
+  top: 40%;
   width: 100%;
   z-index: 1;
 }
@@ -124,21 +131,14 @@ body {
 
 .background-overlay {
   z-index: 1;
-  opacity: 0.33 !important;
   position: relative;
-  margin-top: -12.5%;
+  margin-top: -16.666%;
 }
 
 .background-overlay img {
   width: 100%;
+  opacity: 0.33 !important;
 }
-/*
-.layout {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: 5;
-}*/
 
 h1 {
   font-weight: 800;
@@ -251,6 +251,7 @@ a:hover {
 }
 
 .copyright {
+  display: block;
   font-size: 11px;
 }
 
