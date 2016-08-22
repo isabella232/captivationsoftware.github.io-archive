@@ -19,11 +19,7 @@
 
       $page.height(isWide ? 0 : '')
 
-      var heroTop = '';
-      if (isWide) {
-        heroTop = Math.min($bgOverlayImg.height(), $window.height()) / 2;
-      }
-      $hero.css({top: heroTop});
+      $hero.css({top: Math.min($bgOverlayImg.height(), $window.height()) / 3 * 2});
     });
 
     // Set Copyright to the current year
