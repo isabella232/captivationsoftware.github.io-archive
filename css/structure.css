@@ -130,7 +130,7 @@ body {
 }
 
 .background-overlay {
-  z-index: 1;
+  z-index: 0;
   position: relative;
   margin-top: -16.666%;
 }
