@@ -4,8 +4,10 @@
 
     var $window = $(window);
     var $body = $('body');
-    var $landing = $('.landing.section .background-overlay');
-    var $overview = $('.overview.section');
+    var $landing = $('.landing.section');
+    var $bgOverlay = $landing.find('.background-overlay');
+    var $bgOverlayImg = $bgOverlay.find('img');
+    var $overview = $('.overview');
     var $layout = $('.layout');
 
     $body.flowtype({
@@ -14,16 +16,15 @@
     });
 
     $window.on('pageload resize load', function() {
-      var top = '';
+      var isWide = $window.width() > 991;
 
-      var windowIsDesktop = $window.width() > 992;
-      var hasOverlap = $landing.outerHeight(true) + $overview.outerHeight() > $window.innerHeight();
-      if (windowIsDesktop && hasOverlap) {
-        top = $(window).innerHeight() - $overview.outerHeight();
-
-        if (top && top < 500) top = 500;
+      if (isWide) {
+        var height = $window.height();
+        $landing.height(height - 80);
+        $bgOverlayImg.css('clip', 'rect(0px, 2000000px, ' + (height + 50) + 'px, 0px)');
+      } else {
+        $landing.height($bgOverlayImg.height());
       }
-      $layout.css('top', top);
     });
 
     // Set Copyright to the current year

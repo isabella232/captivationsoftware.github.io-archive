@@ -1,5 +1,19 @@
 /* Override bootstrap large container */
 @media (min-width: 992px) {
+  .layout {
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .background-overlay {
+    margin-top: -12.5%;
+  }
+
+  .layout {
+    height: 25%;
+    min-height: 180px;
+  }
+
   .container {
     width: 960px;
   }
@@ -16,6 +30,10 @@
 }
 
 @media (max-width: 991px) {
+  h2 + p, h2 + ul {
+    margin-bottom: 30px;
+  }
+
   .hero {
     left: 0;
     right: 0;

@@ -1,6 +1,7 @@
 body {
   font-family: "Proxima Nova", Arial, sans-serif;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 * {
@@ -9,7 +10,7 @@ body {
 
 .landing.section {
   height: 100%;
-  padding: 0;
+  padding: 80px 0 0;
 }
 
 .landing.section ~ .section {
@@ -22,6 +23,13 @@ body {
 
 .overview.section {
   padding: 40px 0 5px;
+  transform: rotate(0.5deg);
+  width: 101%;
+  margin-left: -0.5%;
+}
+
+.overview.section > * {
+  transform: rotate(-0.5deg);
 }
 
 .section {
@@ -33,11 +41,16 @@ body {
 .header {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  line-height: 80px;
-  z-index: 4;
+  left: -0.5%;
+  width: 101%;
+  height: 170px;
+  line-height: 250px;
+  z-index: 10;
+  transform: rotate(-1deg) translateY(-80px);
+}
+
+.header > * {
+  transform: rotate(1deg);
 }
 
 .header .btn,
@@ -48,15 +61,10 @@ body {
   margin: 15px 0;
   min-width: 0;
   width: auto;
-  padding-left:15px;
-  padding-right: 15px;
+  padding-left:12px;
+  padding-right: 12px;
 }
 
-.push-header .brand-push, .push-header .symbol-push {
-  display: inline-block !important;
-}
-
-.push-header .brand, .push-header .symbol,
 .brand-push, .symbol-push {
   display: none;
 }
@@ -86,7 +94,7 @@ body {
 .hero {
   position: absolute;
   text-align: center;
-  top: 350px;
+  top: 33%;
   width: 100%;
   z-index: 1;
 }
@@ -102,17 +110,20 @@ body {
 }
 
 .background-overlay {
-  opacity: 0.4;
   z-index: 1;
+  opacity: 0.33 !important;
+  position: relative;
+}
+
+.background-overlay img {
+  position: absolute;
   width: 100%;
-  margin-top: -10%;
 }
 
 .layout {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: 5;
 }
 
@@ -135,8 +146,9 @@ h1 + p, p {
   margin: 0 0 30px;
 }
 
-h2 + p {
+h2 + p, h2 + ul {
   padding: 2px 0;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
@@ -262,28 +274,10 @@ a:hover {
   line-height: 23px;
 }
 
-.footer {
-  padding: 0;
-  height: 60px;
-}
-
-.footer .brand {
-  cursor: pointer;
-}
-
-.footer .copyright {
-  float: right;
-  font-size: 11px;
-  margin-right: 10px;
-  line-height: 30px;
-}
-
-.footer .glyphicon-chevron-down {
-  top: 0;
-}
-
-.footer .glyphicon-chevron-up {
-  top: -5px;
+.copyright {
+  display: inline-block;
+   font-size: 11px;
+   margin-top: 30px;
 }
 
 img.logo-mark {
@@ -299,13 +293,6 @@ img.icon {
 
 .solution.row img.icon {
   margin-bottom: 30px;
-}
-
-.landing .footer {
-  height: auto;
-  padding-top: 30px;
-  min-height: 25%;
-  line-height: inherit;
 }
 
 .contact {
