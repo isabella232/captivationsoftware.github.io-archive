@@ -1,19 +1,5 @@
 /* Override bootstrap large container */
 @media (min-width: 992px) {
-  .layout {
-    bottom: 0;
-    overflow: hidden;
-  }
-
-  .background-overlay {
-    margin-top: -12.5%;
-  }
-
-  .layout {
-    height: 25%;
-    min-height: 180px;
-  }
-
   .container {
     width: 960px;
   }
@@ -35,23 +21,6 @@
     text-align: center;
     width: 100%;
     top: 72.5%;
-  }
-
-  .background-overlay {
-    margin-top: 0;
-  }
-
-  .content .main.container {
-      padding-top: 30px;
-      padding-bottom: 30px;
-  }
-
-  .landing {
-      overflow-x: hidden;
-  }
-
-  .landing .footer {
-    top: 100%;
   }
 
   .required.indicator {

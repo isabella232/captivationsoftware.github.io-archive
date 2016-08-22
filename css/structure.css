@@ -1,3 +1,10 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
 body {
   font-family: "Proxima Nova", Arial, sans-serif;
   font-size: 18px;
@@ -8,46 +15,26 @@ body {
   outline: none !important;
 }
 
-.landing.section {
-  height: 100%;
-  padding: 80px 0 0;
+.page {
+  min-height: 100%;
+  position: relative;
   overflow: hidden;
 }
 
-.landing.section ~ .section {
-  z-index: 4;
-}
-
-.landing + .section {
-  padding-bottom: 10px;
-}
-
-.overview.section {
-  padding: 40px 0 5px;
-  transform: rotate(0.5deg);
-  width: 101%;
-  margin-left: -0.5%;
-}
-
-.overview.section > * {
-  transform: rotate(-0.5deg);
-}
-
-.section {
-  margin-top: -1px;
-  position: relative;
-  padding: 30px 0;
+.content {
+  padding: 120px 0 30px;
+  height: 100%;
 }
 
 .header {
-  position: absolute;
-  top: 0;
-  left: -0.5%;
+  height: 120px;
+  margin-left: -0.5%;
+  margin-top: -40px;
+  padding-top: 58px;
+  transform: rotate(-1deg);
   width: 101%;
-  height: 170px;
-  line-height: 250px;
   z-index: 10;
-  transform: rotate(-1deg) translateY(-80px);
+  position: fixed;
 }
 
 .header > * {
@@ -72,6 +59,29 @@ body {
   display: inline;
 }
 
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  z-index: 9;
+}
+
+.overview {
+  padding: 40px 0 5px;
+  transform: rotate(0.5deg);
+  width: 101%;
+  margin-left: -0.5%;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+.overview > * {
+  transform: rotate(-0.5deg);
+}
+
 .brand-push, .symbol-push {
   display: none;
 }
@@ -84,10 +94,6 @@ body {
 .symbol, .symbol-push {
   height: 30px;
   width: 30px;
-}
-
-.landing .footer {
-  padding: 0;
 }
 
 .underline {
@@ -120,19 +126,19 @@ body {
   z-index: 1;
   opacity: 0.33 !important;
   position: relative;
+  margin-top: -12.5%;
 }
 
 .background-overlay img {
-  position: absolute;
   width: 100%;
 }
-
+/*
 .layout {
   position: absolute;
   left: 0;
   width: 100%;
   z-index: 5;
-}
+}*/
 
 h1 {
   font-weight: 800;
@@ -245,9 +251,7 @@ a:hover {
 }
 
 .copyright {
-  display: inline-block;
-   font-size: 11px;
-   margin-top: 30px;
+  font-size: 11px;
 }
 
 img.logo-mark {
