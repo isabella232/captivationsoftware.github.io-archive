@@ -67,7 +67,7 @@ body {
 .header .mobile-menu {
   left: -5%;
   position: absolute;
-  top: 118px;
+  top: 110px;
   transform: rotate(0deg);
   width: 110%;
   z-index: 1;
@@ -79,7 +79,7 @@ body {
 
 .header .mobile-menu ul li {
   display: block;
-  height: 60px;
+  height: 55px;
   padding: 0 5px;
   text-align: center;
 }
