@@ -6,107 +6,51 @@
   color: #FFFFFF;
 }
 
-.orange-bg {
-  background-color: #F7A700;
-}
-
-.white-bg {
-  background-color: #FFFFFF;
-}
-
-.white-bg h2 {
-  color: #F7A700;
-}
-
-/* Black Theme */
-.black-bg {
-  background-color: #373737;
-}
-
-.black-bg .glyphicon {
-  color: #F7A700;
-}
-
-
-.black-bg ul li {
-  color: #FFFFFF;
-}
-
-.black-bg h1,
-.black-bg .btn,
-.black-bg a {
-  color: #F7A700;
-}
-
-.black-bg .btn:hover {
-  color: #FFFFFF;
-  border-color: #F7A700;
-  background-color: #F7A700;
-}
-
-.black-bg .copyright,
-.black-bg p {
-  color: #EEEEEE;
-}
-
-/* Gray Themes */
-.dark-bg {
-  background-color: #E3E3E3;
-}
-
-.light-bg {
+body {
   background-color: #EEEEEE;
 }
 
-.light-bg h1,
-.light-bg a,
-.light-bg .required,
-.dark-bg h1,
-.dark-bg a,
-.dark-bg .required {
+h1,
+a,
+.required {
   color: #F7A700;
 }
 
-
-.dark-bg .btn,
-.light-bg .btn,
-.dark-bg .btn:hover,
-.light-bg .btn:hover,
-.dark-bg .btn.active,
-.light-bg .btn.active,
-.dark-bg .btn:active,
-.light-bg .btn:active {
+.btn,
+.btn:hover,
+.btn.active,
+.btn:active {
   color: #FFFFFF;
   border-color: #F7A700;
   background-color: #F7A700;
 }
 
-.dark-bg .btn[disabled],
-.light-bg .btn[disabled],
-.dark-bg .btn[disabled]:hover,
-.light-bg .btn[disabled]:hover {
+.btn[disabled],
+.btn[disabled]:hover {
   background-color: transparent;
   color: #F7A700;
   border-color:  #F7A700;
 }
 
-.light-bg .btn.error, .light-bg .btn.error:hover {
+.btn.error,
+.btn.error:hover {
   color: #FFFFFF;
   background-color: #DC4242;
   border-color: #DC4242;
 }
 
-.light-bg .btn.success, .light-bg .btn.success:hover {
+.btn.success,
+.btn.success:hover {
   color: #FFFFFF;
   background-color: #4BB324;
   border-color: #4BB324;
   cursor: default;
 }
 
-.dark-bg .glyphicon,
-.light-bg .glyphicon {
+.glyphicon {
   color: #333333;
 }
+
 
 .header {
   background-color: #333;
@@ -133,4 +77,18 @@ label.required::after {
 
 .solution.row:last-child {
   border-bottom: 0;
+}
+
+/* Orange override */
+.orange-bg {
+  background-color: #F7A700;
+}
+
+/* White override */
+.white-bg {
+  background-color: #FFFFFF;
+}
+
+.white-bg h2 {
+  color: #F7A700;
 }

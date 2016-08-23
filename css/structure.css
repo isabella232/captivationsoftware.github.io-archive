@@ -30,11 +30,12 @@ body {
   height: 120px;
   margin-left: -0.5%;
   margin-top: -40px;
-  padding-top: 60px;
+  padding-top: 55px;
   transform: rotate(-1deg);
   width: 101%;
   z-index: 10;
   position: fixed;
+  line-height: 40px;
 }
 
 .header > * {
