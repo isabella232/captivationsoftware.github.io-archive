@@ -18,7 +18,7 @@
 
       $header.css({
         position: isOpen ? 'fixed' : 'absolute',
-        top: isOpen ? 1 : $window.scrollTop()
+        top: isOpen ? 0 : $window.scrollTop()
       });
 
       $menu.toggleClass('hidden', isOpen);
