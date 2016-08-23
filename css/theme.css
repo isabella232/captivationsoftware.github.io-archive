@@ -63,7 +63,7 @@ a:active {
 }
 
 
-.header {
+.header, .header .mobile-menu {
   background-color: #333;
 }
 
