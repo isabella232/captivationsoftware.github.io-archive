@@ -1,8 +1,16 @@
 (function($) {
 
   $(document).ready(function() {
-    $('.nav.btn').on('click', function() {
-      $('.mobile-menu').toggleClass('hidden');
-    })
+    var $window = $(window);
+    var $toggle = $('.header .nav.btn');
+    var $menu = $('.header .mobile-menu');
+
+    $toggle.on('click', function() {
+      $menu.toggleClass('hidden');
+    });
+
+    $window.on('resize', function() {
+      $menu.addClass('hidden');
+    });
   });
 })(jQuery);
