@@ -31,7 +31,7 @@
     });
 
     $window.on('resize', function() {
-      // toggleMenu(true);
+      toggleMenu(true);
     });
 
     $window.on('scroll', function() {
