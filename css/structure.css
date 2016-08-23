@@ -90,18 +90,17 @@ body {
   min-height: 200px;
 }
 
-.brand-push, .symbol-push {
-  display: none;
+.overview h3 {
+  margin-top: 0;
 }
 
-.brand, .brand-push {
+.overview h3 + p, .overview h3 + ul {
+  margin-bottom: 25px;
+}
+
+.brand {
   height: 30px;
   width: 188px;
-}
-
-.symbol, .symbol-push {
-  height: 30px;
-  width: 30px;
 }
 
 .underline {
@@ -142,16 +141,29 @@ body {
 
 h1 {
   font-weight: 800;
-  margin: 25px 0;
+  margin: 25px 0 15px;
   font-weight: 700;
   font-size: 30px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin: 25px 0 4px;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0 0;
 }
 
 h1 + p, p {
@@ -159,19 +171,23 @@ h1 + p, p {
   margin: 0 0 30px;
 }
 
-h2 + p, h2 + ul {
+h2 + p, h3 + p, h3 + ul, h4 + p, h4 + ul {
   padding: 2px 0;
   margin-bottom: 0;
-  font-weight: normal;
 }
 
-p {
-  font-weight: 600;
+p + h4 {
+  margin-top: 15px;
 }
 
 p,
 ul li {
   font-size: 16px;
+}
+
+p + p {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 em {
@@ -184,14 +200,6 @@ a:visited,
 a:active,
 a:hover {
   text-decoration: underline;
-}
-
-.solution.row {
-  padding: 10px 0 0;
-}
-
-.solution.row + .solution.row {
-  padding-top: 30px;
 }
 
 .btn,
@@ -217,39 +225,6 @@ a:hover {
   pointer-events: all;
 }
 
-.glyphicon {
-  font-size: 30px;
-  position: absolute;
-}
-
-.glyphicon-chevron-down, .glyphicon-chevron-up {
-  left: calc(50% - 15px);
-  text-align: center;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.glyphicon-chevron-up::after {
-  content: "BACK TO TOP";
-  font-family: "Proxima Nova";
-  font-size: 8px;
-  font-weight: 600;
-  display: block;
-}
-
-.capabilities h2 {
-  margin: 3px 0;
-}
-
-.capabilities ul {
-  margin-bottom: 30px;
-}
-
-.capabilities ul li {
-  font-size: 15px;
-  line-height: 23px;
-}
-
 .copyright {
   display: block;
   font-size: 11px;
@@ -264,10 +239,6 @@ img.logo-mark {
 img.icon {
   width: 100px;
   height: 100px;
-}
-
-.solution.row img.icon {
-  margin-bottom: 30px;
 }
 
 .contact {
