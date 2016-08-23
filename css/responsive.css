@@ -1,5 +1,9 @@
 /* Override bootstrap large container */
 @media (min-width: 992px) {
+  body {
+    min-height: 450px;
+  }
+
   .container {
     width: 960px;
   }

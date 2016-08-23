@@ -114,7 +114,6 @@ body {
 .hero {
   position: absolute;
   text-align: center;
-  top: 40%;
   width: 100%;
   z-index: 1;
 }

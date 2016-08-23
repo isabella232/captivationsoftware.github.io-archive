@@ -5,9 +5,9 @@
     var $window = $(window);
     var $body = $('body');
     var $page = $body.find('.page');
-    var $bgOverlay = $page.find('.background-overlay');
-    var $bgOverlayImg = $bgOverlay.find('img');
-    var $hero = $bgOverlay.find('.hero');
+    var $hero = $page.find('.hero');
+    var $header = $page.find('.header');
+    var $overlayImage = $page.find('.background-overlay img');
 
     $body.flowtype({
       maxFont: 30,
@@ -16,10 +16,19 @@
 
     $window.on('pageload resize load', function() {
       var isWide = $window.width() > 991;
+      var $overview = $page.find('.overview:visible');
 
       $page.height(isWide ? 0 : '')
 
-      $hero.css({top: Math.min($bgOverlayImg.height(), $window.height()) / 3 * 2});
+      // Magic numbers, galore!!!
+      // (I can't help what looks good...)
+      var overlayRect = $overlayImage[0].getBoundingClientRect();
+      var heroHeight = $hero.height();
+      var top = isWide ?
+        Math.max(($window.height() - heroHeight) / 2 - 50, 125) :
+        overlayRect.height / 2 - (heroHeight / 2) + 90;
+
+      $hero.css({ top: top });
     });
 
     // Set Copyright to the current year
