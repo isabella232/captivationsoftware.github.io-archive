@@ -18,12 +18,10 @@
 
       $header.css({
         position: isOpen ? 'fixed' : 'absolute',
-        top: isOpen ? 0 : $window.scrollTop()
+        top: isOpen ? 1 : $window.scrollTop()
       });
 
-      setTimeout(function() {
-        $menu.toggleClass('hidden', isOpen);
-      }, 0);
+      $menu.toggleClass('hidden', isOpen);
     }
 
     $toggle.on('click', function() {
