@@ -15,12 +15,15 @@
 }
 
 h1,
+.required {
+  color: #F7A700;
+}
+
 a:link,
 a:visited,
 a:hover,
-a:active,
-.required {
-  color: #F7A700;
+a:active {
+  color: #E97200;
 }
 
 .btn,
