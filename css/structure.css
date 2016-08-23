@@ -60,6 +60,10 @@ body {
   display: inline;
 }
 
+.header .nav.btn {
+  padding: 0;
+}
+
 .footer {
   position: absolute;
   bottom: 0;

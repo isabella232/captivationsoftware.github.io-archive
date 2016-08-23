@@ -1,13 +1,26 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
+
+      <!-- Branding -->
       <div class="pull-left">
         <a href="/">
           <img class="brand" src="images/logo-light.png" alt="Captivation Software" />
         </a>
       </div>
-      <div class="hidden-xs hidden-sm pull-right">
-        {% include menu.html %}
+
+      <!-- Navigation -->
+      <div class="pull-right">
+        <div class="hidden-md hidden-lg">
+          <button class="nav btn">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="hidden-xs hidden-sm">
+          {% include menu.html %}
+        </div>
       </div>
     </div>
   </div>

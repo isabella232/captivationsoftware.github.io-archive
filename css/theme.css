@@ -72,6 +72,15 @@ a:active {
   border: 0;
 }
 
+.header .icon-bar {
+  background-color: #FFFFFF;
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px 0;
+  border-radius: 1px;
+}
+
 .required.indicator:before,
 label.required::after {
   color: #F7A700;
