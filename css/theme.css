@@ -15,7 +15,10 @@
 }
 
 h1,
-a,
+a:link,
+a:visited,
+a:hover,
+a:active,
 .required {
   color: #F7A700;
 }
@@ -73,14 +76,6 @@ label.required::after {
 
 .hero h2, .hero ul li {
   color: #FFFFFF;
-}
-
-.solution.row {
-  border-bottom: dotted 1px rgba(51,51,51,0.2);
-}
-
-.solution.row:last-child {
-  border-bottom: 0;
 }
 
 /* Orange override */
