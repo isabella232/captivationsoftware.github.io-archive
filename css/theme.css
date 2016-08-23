@@ -73,14 +73,13 @@ a:active {
   border: 0;
 }
 
-
-.header .icon-bar {
+.header .btn .icon-bar {
   background-color: #FFFFFF;
-  display: block;
-  width: 22px;
-  height: 2px;
-  margin: 4px 0;
   border-radius: 1px;
+}
+
+.header .btn .close {
+  color: #FFFFFF;
 }
 
 .required.indicator:before,
