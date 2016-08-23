@@ -21,7 +21,9 @@
         top: isOpen ? 0 : $window.scrollTop()
       });
 
-      $menu.toggleClass('hidden', isOpen);
+      setTimeout(function() {
+        $menu.toggleClass('hidden', isOpen);
+      }, 0);
     }
 
     $toggle.on('click', function() {
