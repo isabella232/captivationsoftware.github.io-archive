@@ -7,7 +7,7 @@
 <!--[if !IE]> -->
 <body>
 <!-- <![endif]-->
-  <div class="page">
+  <div class="page {% if page.url != '/' %} subpage {% endif %}">
     <div class="header">
       {% include header.html %}
     </div>

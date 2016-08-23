@@ -6,7 +6,11 @@
   color: #FFFFFF;
 }
 
-body {
+.page {
+  background-color: #FFFFFF;
+}
+
+.page.subpage {
   background-color: #EEEEEE;
 }
 
