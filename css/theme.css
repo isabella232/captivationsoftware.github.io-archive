@@ -10,10 +10,6 @@
   background-color: #FFFFFF;
 }
 
-.page.subpage {
-  background-color: #EEEEEE;
-}
-
 h1,
 .required {
   color: #F7A700;
@@ -103,4 +99,8 @@ label.required::after {
 
 .white-bg h3 {
   color: #F7A700;
+}
+
+.page, .gray-bg {
+  background-color: #EEEEEE;
 }

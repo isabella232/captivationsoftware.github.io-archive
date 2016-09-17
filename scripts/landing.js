@@ -5,6 +5,7 @@
     var $window = $(window);
     var $body = $('body');
     var $page = $body.find('.page');
+    var $landing = $page.find('.landing');
     var $hero = $page.find('.hero');
     var $overlayImage = $page.find('.background-overlay img');
 
@@ -14,10 +15,13 @@
     });
 
     $window.on('pageload resize load', function() {
-      var isWide = $window.width() > 991;
-      var $overview = $page.find('.overview:visible');
+      new WOW().init();
 
-      $page.height(isWide ? 0 : '')
+      var isWide = $window.width() > 991;
+
+      $landing.css({
+        height: isWide ? $window.height() : ''
+      });
 
       // Magic numbers, galore!!!
       // (I can't help what looks good...)
