@@ -26,6 +26,10 @@ body {
   height: 100%;
 }
 
+.subpage .content {
+    padding-top: 70px;
+}
+
 .content .container {
   margin-top: 50px;
 }
@@ -34,6 +38,9 @@ body {
   margin-top: 0;
 }
 
+.content .container + .container {
+  padding-top: 50px;
+}
 
 .header {
   font-size: 0;
@@ -174,7 +181,7 @@ body {
   z-index: 3;
   line-height: 1;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 1.9em;
   margin: 0;
 }
 
@@ -199,7 +206,7 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 200;
-  margin: 0;
+  margin: 0 0 30px;
 }
 
 h3 {
@@ -397,4 +404,15 @@ label.required:after {
 
 .ie form {
   display: none;
+}
+
+.tech-icon {
+  height: 140px;
+  margin: 30px auto 50px;
+  text-align: center;
+}
+
+.tech-icon img {
+  width: auto;
+  max-height: 100%;
 }

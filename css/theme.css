@@ -10,6 +10,10 @@
   background-color: #FFFFFF;
 }
 
+.content .container + .container {
+  border-top: solid 1px #bbb;
+}
+
 p {
   color: #555;
 }
@@ -61,6 +65,7 @@ a:active {
   border-color: #4BB324;
   cursor: default;
 }
+
 
 .glyphicon {
   color: #333333;

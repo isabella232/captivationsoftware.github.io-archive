@@ -15,8 +15,6 @@
     });
 
     $window.on('pageload resize load', function() {
-      new WOW().init();
-
       var isWide = $window.width() > 991;
 
       $landing.css({
