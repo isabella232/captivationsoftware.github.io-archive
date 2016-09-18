@@ -26,6 +26,15 @@ body {
   height: 100%;
 }
 
+.content .container {
+  margin-top: 50px;
+}
+
+.content .landing .container {
+  margin-top: 0;
+}
+
+
 .header {
   font-size: 0;
   height: 120px;
@@ -227,6 +236,10 @@ p + h4 {
 
 p,
 ul li {
+  font-size: 18px;
+}
+
+.landing p, .landing ul li {
   font-size: 16px;
 }
 
@@ -252,8 +265,8 @@ a:hover {
 .btn:visited,
 .btn:active,
 .btn:hover {
-  border: solid 3px;
-  border-radius: 4px;
+  border: solid 4px;
+  border-radius: 8px;
   padding: 12px;
   font-size: 15px;
   font-weight: bold;
@@ -306,11 +319,12 @@ img.icon {
 }
 
 .form-control {
-  border-radius: 0;
+  border-radius: 8px;
+  border: 0;
   margin: 5px 0;
   height: 45px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 100;
   width: 100%;
   font-style: normal;
 }
@@ -356,30 +370,29 @@ label.required:after {
   top: 0;
 }
 
-
 ::-webkit-input-placeholder {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 :-moz-placeholder {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 ::-moz-placeholder {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 :-ms-input-placeholder {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 .placeholdersjs {
   font-style: italic !important;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 .ie form {

@@ -10,9 +10,17 @@
   background-color: #FFFFFF;
 }
 
+p {
+  color: #555;
+}
+
 h1,
 .required {
   color: #F7A700;
+}
+
+h3 {
+  color: #111;
 }
 
 a:link,
