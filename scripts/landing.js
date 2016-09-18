@@ -15,11 +15,12 @@
     });
 
     $window.on('pageload resize load', function() {
-      var isWide = $window.width() > 991;
+      var isWide = window.innerWidth > 991;
 
       $landing.css({
         height: isWide ? $window.height() : ''
       });
+      console.log($landing.css('height'), isWide)
 
       // Magic numbers, galore!!!
       // (I can't help what looks good...)

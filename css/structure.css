@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-  padding: 120px 0 60px;
+  padding: 120px 0 120px;
   height: 100%;
 }
 
@@ -120,11 +120,17 @@ body {
 
 .footer {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+  bottom: -30px;
+  width: 105%;
+  left: -2.5%;
+  height: 100px;
   line-height: 75px;
   z-index: 9;
+  transform: rotate(1.2deg)
+}
+
+.footer > * {
+  transform: rotate(-1.2deg);
 }
 
 .landing {
@@ -243,6 +249,7 @@ p + h4 {
 
 p,
 ul li {
+  font-weight: 100;
   font-size: 18px;
 }
 
@@ -304,10 +311,6 @@ img.logo-mark {
 img.icon {
   width: 100px;
   height: 100px;
-}
-
-.contact {
-  font-weight: 500;
 }
 
 .required {
@@ -408,11 +411,12 @@ label.required:after {
 
 .tech-icon {
   height: 140px;
-  margin: 30px auto 50px;
+  margin: 20px auto;
   text-align: center;
 }
 
 .tech-icon img {
   width: auto;
   max-height: 100%;
+  max-width: 90px;
 }

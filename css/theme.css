@@ -73,7 +73,7 @@ a:active {
 
 
 .header, .header .mobile-menu {
-  background-color: #333;
+  background: #333;
 }
 
 .header .btn {
@@ -89,6 +89,10 @@ a:active {
 
 .header .btn .close {
   color: #FFFFFF;
+}
+
+.footer {
+  background: #DDDDDD;
 }
 
 .required.indicator:before,
