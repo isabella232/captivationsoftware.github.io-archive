@@ -4,7 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
-
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!--[if gte IE 8]><script src="scripts/xdr.js"></script><![endif]-->
 
