@@ -20,7 +20,6 @@
       $landing.css({
         height: isWide ? $window.height() : ''
       });
-      console.log($landing.css('height'), isWide)
 
       // Magic numbers, galore!!!
       // (I can't help what looks good...)
