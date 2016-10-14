@@ -1,0 +1,9 @@
+url: https://www.captivationsoftware.com
+sass:
+  style: compressed
+gems:
+  - jekyll-sitemap
+defaults:
+  -
+    values:
+      last_modified_at: 2016-12-16

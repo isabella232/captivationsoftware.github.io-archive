@@ -1,4 +1,4 @@
-<div class="sticky-menu">
+<div class="header navbar navbar-fixed-top">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -6,7 +6,7 @@
         <!-- Branding -->
         <div class="pull-left">
           <a href="/">
-            <img class="brand" src="images/logo-light.png" alt="Captivation Software" />
+            <img class="brand" src="/images/logo-light.png" alt="Captivation Software" />
           </a>
         </div>
 
@@ -28,11 +28,12 @@
             {% include menu.html %}
           </div>
         </div>
+
       </div>
     </div>
   </div>
-</div>
 
-<div class="mobile-menu hidden">
-  {% include menu.html %}
+  <div class="mobile-menu hidden">
+    {% include menu.html %}
+  </div>
 </div>

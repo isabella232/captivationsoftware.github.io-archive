@@ -1,0 +1,27 @@
+.content {
+  padding-bottom: 40px;
+  min-height: 95vh;
+
+  .container {
+    margin-top: 50px;
+
+    &+ .container {
+      padding-top: 50px;
+      border-top: solid 1px #bbb;
+    }
+  }
+}
+
+.subpage .content {
+  padding: 50px 0 40px;
+
+  @media (min-width: 992px) {
+    .col-md-8 {
+      width: 62%;
+    }
+
+    .col-md-4 {
+      width: 36%;
+    }
+  }
+}

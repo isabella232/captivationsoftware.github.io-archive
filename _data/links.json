@@ -1,0 +1,22 @@
+{
+  "/services/": "Our Services",
+  "/services/software-engineering/": "Software Engineering",
+  "/services/software-engineering/agile-management/": "Agile Management",
+  "/services/software-engineering/domain-modeling/": "Domain Modeling",
+  "/services/software-engineering/system-integrations/": "System Integrations",
+  "/services/application-development/": "Application Development",
+  "/services/application-development/web-services-and-apis/": "Web Services and APIs",
+  "/services/application-development/realtime-applications/": "Real-Time Applications",
+  "/services/application-development/data-management/": "Data Management",
+  "/services/user-interfaces/": "User Interfaces",
+  "/services/user-interfaces/responsive-design/": "Responsive Design",
+  "/services/user-interfaces/data-visualizations/": "Data Visualizations",
+  "/services/user-interfaces/user-experience/": "User Experience",
+  "/services/devops/": "DevOps",
+  "/services/devops/automated-provisioning/": "Automated Provisioning",
+  "/services/devops/application-clustering/": "Application Clustering",
+  "/services/devops/cloud-deployments/": "Cloud Deployments",
+  "/jobs/": "Job Opportunities",
+  "/company/": "Company Info",
+  "/contact/": "Contact Us"
+}

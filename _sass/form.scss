@@ -1,0 +1,139 @@
+form {
+  margin-top: -10px;
+
+  .form-group {
+    .btn,
+    .btn:hover,
+    .btn:active,
+    .btn:focus,
+    .btn:link,
+    .btn:visited {
+      margin: 12px 0px;
+      border: solid 2px;
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: none;
+      text-decoration: none;
+      min-width: 100px;
+      color: #FFFFFF;
+      border-color: #F7A700;
+      background-color: #F7A700;
+
+      &[disabled] {
+        background-color: transparent;
+        color: #F7A700;
+        border-color:  #F7A700;
+        opacity: 1.0;
+        cursor: default;
+        pointer-events: all;
+      }
+
+      &.error,&.error:hover {
+        color: #FFFFFF;
+        background-color: #DC4242;
+        border-color: #DC4242;
+      }
+
+      &.success,&.success:hover {
+        color: #FFFFFF;
+        background-color: #4BB324;
+        border-color: #4BB324;
+        cursor: default;
+      }
+    }
+  }
+
+  .required {
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .required.indicator {
+    color: #f7a700;
+    position: relative;
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  .form-control {
+    border-radius: 8px;
+    border: 0;
+    margin: 5px 0;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 100;
+    width: 100%;
+    font-style: normal;
+  }
+
+  .required .form-control {
+    padding-right: 30px;
+  }
+
+  textarea.form-control {
+    resize: none;
+    height: 110px;
+  }
+
+  label {
+    display: block;
+    width: calc(100% + 22px);
+    max-width: none;
+    position: relative;
+  }
+
+  .required.indicator:before,
+  label.required:after {
+    color: #f7a700;
+    content: "*";
+    font-size: 26px;
+    font-style: normal;
+    width: 20px;
+    position: absolute;
+    font-weight: 600;
+  }
+
+  .required.indicator:before {
+    top: -3px;
+    left: -15px;
+  }
+
+  label.required:after {
+    line-height: 58px;
+    right: 0;
+    top: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  :-moz-placeholder {
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  ::-moz-placeholder {
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  :-ms-input-placeholder {
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  .placeholdersjs {
+    font-style: italic !important;
+    font-weight: 100;
+  }
+
+}
+
+.ie form {
+  display: none;
+}

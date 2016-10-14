@@ -32,7 +32,7 @@
               .removeClass('error active')
               .addClass('success')
               .text('Sent');
-            },
+          },
           error: function() {
             $button.removeClass('active').addClass('error').text('Try Again');
           }

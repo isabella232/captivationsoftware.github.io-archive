@@ -1,7 +1,42 @@
-<ul class="menu list-unstyled">
-  <li><a href="what-we-do" class="btn">WHAT WE DO</a></li>
-  <li><a href="technologies" class="btn">TECHNOLOGIES</a></li>
-  <li><a href="jobs" class="btn">JOB OPPORTUNITIES</a></li>
-  <li><a href="company" class="btn">COMPANY INFO</a></li>
-  <li><a href="contact" class="btn">CONTACT US</a></li>
+<ul class="menu list-unstyled list-inline">
+  <li>
+    {% include menulink.html href="/services/" %}
+    <ul class="menu list-unstyled list-inline hidden-xs hidden-sm">
+      <li>
+        {% include menulink.html href="/services/software-engineering/" %}
+        <ul class="menu list-unstyled">
+          <li>{% include menulink.html href="/services/software-engineering/agile-management/" %}</li>
+          <li>{% include menulink.html href="/services/software-engineering/domain-modeling/" %}</li>
+          <li>{% include menulink.html href="/services/software-engineering/system-integrations/" %}</li>
+        </ul>
+      </li>
+      <li>
+        {% include menulink.html href="/services/application-development/" %}
+        <ul class="menu list-unstyled">
+          <li>{% include menulink.html href="/services/application-development/web-services-and-apis/" %}</li>
+          <li>{% include menulink.html href="/services/application-development/realtime-applications/" %}</li>
+          <li>{% include menulink.html href="/services/application-development/data-management/" %}</li>
+        </ul>
+      </li>
+      <li>
+        {% include menulink.html href="/services/user-interfaces/" %}
+        <ul class="menu list-unstyled">
+          <li>{% include menulink.html href="/services/user-interfaces/responsive-design/" %}</li>
+          <li>{% include menulink.html href="/services/user-interfaces/data-visualizations/" %}</li>
+          <li>{% include menulink.html href="/services/user-interfaces/user-experience/" %}</li>
+        </ul>
+      </li>
+      <li>
+        {% include menulink.html href="/services/devops/" %}
+        <ul class="menu list-unstyled">
+          <li>{% include menulink.html href="/services/devops/automated-provisioning/" %}</li>
+          <li>{% include menulink.html href="/services/devops/application-clustering/" %}</li>
+          <li>{% include menulink.html href="/services/devops/cloud-deployments/" %}</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>{% include menulink.html href="/jobs/" %}</li>
+  <li>{% include menulink.html href="/company/" %}</li>
+  <li>{% include menulink.html href="/contact/" %}</li>
 </ul>

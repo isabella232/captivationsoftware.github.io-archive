@@ -36,12 +36,12 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/2fcc23");
+/*@import url("//hello.myfonts.net/count/2fcc23");*/
 
 /* Black */
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('../fonts/fonts/2FCC23_0_0.eot');
+  src: url('../fonts/2FCC23_0_0.eot');
   src: url('../fonts/2FCC23_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2FCC23_0_0.woff2') format('woff2'),url('../fonts/2FCC23_0_0.woff') format('woff'),url('../fonts/2FCC23_0_0.ttf') format('truetype'),url('../fonts/2FCC23_0_0.svg#wf') format('svg');
   font-style: normal;
   font-weight: 900;
