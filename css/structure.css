@@ -267,11 +267,31 @@ em {
   font-style: normal;
 }
 
+section {
+  border-radius: 4px;
+  margin: 0 0 15px;
+  padding: 15px;
+}
+
+section h3 {
+  margin-top: 5px;
+}
+
+section a {
+  margin-top: -5px;
+}
+
 a:link,
 a:visited,
 a:active,
 a:hover {
   text-decoration: underline;
+}
+
+a.back {
+  font-size: 12px;
+  display: block;
+  margin: 0 0 20px;
 }
 
 .btn,
