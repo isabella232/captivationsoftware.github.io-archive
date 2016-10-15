@@ -44,14 +44,15 @@ body {
 
 .header {
   font-size: 0;
-  height: 120px;
+  height: 110px;
   margin-left: -0.5%;
   margin-top: -40px;
+  padding-top: 40px;
   transform: rotate(-1deg);
   width: 101%;
   z-index: 10;
   position: fixed;
-  line-height: 155px;
+  line-height: 70px;
 }
 
 .header > * {
@@ -72,8 +73,33 @@ body {
   padding-right: 12px;
 }
 
+.header .menu li .btn {
+  position: relative;
+  z-index: 1;
+}
+
 .header .menu li {
   display: inline;
+  position: relative;
+}
+
+.header .menu li > .menu {
+  width: 800px;
+  left: -340px;;
+  padding: 50px 0 10px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  visibility: hidden;
+}
+
+.header .menu li:hover > .menu {
+  visibility: visible;
+}
+
+.header .menu .menu li {
+  line-height: 30px;
+  display: block;
 }
 
 .header .nav.btn {
@@ -164,6 +190,8 @@ body {
 .brand {
   height: 30px;
   width: 188px;
+  position: relative;
+  z-index: 1;
 }
 
 .underline {

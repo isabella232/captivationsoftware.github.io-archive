@@ -1,0 +1,59 @@
+ul.menu {
+  li {
+    &> a.btn {
+      text-transform: uppercase;
+      font-weight: 400;
+      &:active, &:link, &:visited {
+        color: #fff;
+      }
+      &:hover {
+        color: #F7A700;
+      }
+    }
+
+    &:hover ul.menu {
+      visibility: visible;
+      transition-delay: 0s;
+    }
+
+    &> ul.menu {
+      position: absolute;
+      left: 50%;
+      top: 72px;
+      margin-left: -496px;
+      width: 992px;
+      padding: 15px 0 15px;
+      visibility: hidden;
+      transition-property: visibility;
+      transition-delay: 0.333s;
+
+      &> li {
+        line-height: 40px;
+        padding: 0 20px;
+        position: relative;
+        width: 240px;
+        font-size: 14px;
+
+        &> .btn {
+          font-weight: 600;
+        }
+
+        &> ul.menu {
+          left: 0;
+          top: 0;
+          margin-top: 15px;
+          margin-left: 0;
+
+          li {
+            line-height: 25px;
+            height: 25px;
+
+            .btn {
+              font-weight: 100;
+            }
+          }
+        }
+      }
+    }
+  }
+}
