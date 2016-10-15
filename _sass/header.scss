@@ -1,3 +1,15 @@
+@media(max-width: 991px) {
+  body {
+    padding-top: 72px;
+  }
+}
+
+@media(min-width: 992px) {
+  body {
+    padding-top: 40px;
+  }
+}
+
 .header {
   height: 80px;
   line-height: 72px;
@@ -9,9 +21,9 @@
     z-index: 0;
     position: absolute;
     left: -1%;
-    top: -40px;
+    top: -420px;
     width: 102%;
-    height: 120px;
+    height: 500px;
   }
 
   .menu:first-child > li > .menu::after {
@@ -19,8 +31,8 @@
     content: " ";
     min-height: 240px;
     position: absolute;
-    left: -200%;
-    right: -200%;
+    left: -300%;
+    right: -300%;
     top: 0;
     transform: rotate(-1deg);
     z-index: -1;
