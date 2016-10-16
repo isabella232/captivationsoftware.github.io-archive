@@ -12,4 +12,11 @@ body {
 
 .page {
   overflow: hidden;
+
+  .btn {
+    
+    &:active {
+      box-shadow: none;
+    }
+  }
 }
