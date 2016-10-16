@@ -1,35 +1,23 @@
 (function($) {
 
   $(document).ready(function() {
-
-    var $window = $(window);
+    var $html = $('html');
     var $body = $('body');
-    var $page = $body.find('.page');
-    var $landing = $page.find('.landing');
-    var $hero = $page.find('.hero');
-    var $overlayImage = $page.find('.background-overlay img');
+    var $scroller = $('html,body');
+    var $landing = $body.find('.landing');
+    var $hero = $landing.find('.hero');
+    var $moreButton = $hero.find('.btn');
+    var $moreSection = $landing.next();
 
     $body.flowtype({
-      maxFont: 30,
-      minFont: 10
-    });
+      minFont: 10,
+      maxFont: 30
+    })
 
-    $window.on('pageload resize load', function() {
-      var isWide = window.innerWidth > 991;
-
-      $landing.css({
-        height: isWide ? $window.height() : ''
+    $moreButton.on('click', function() {
+      $scroller.animate({
+        scrollTop: $moreSection.offset().top - 40
       });
-
-      // Magic numbers, galore!!!
-      // (I can't help what looks good...)
-      var overlayRect = $overlayImage[0].getBoundingClientRect();
-      var heroHeight = $hero.height();
-      var top = isWide ?
-        Math.max(($window.height() - heroHeight) / 2 - 50, 125) :
-        overlayRect.height / 2 - (heroHeight / 2) + 90;
-
-      $hero.css({ top: top });
     });
 
   });
