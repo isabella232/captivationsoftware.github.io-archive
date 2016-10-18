@@ -321,35 +321,6 @@ a.back {
   display: block;
   margin: 0 0 20px;
 }
-
-.btn,
-.btn:link,
-.btn:visited,
-.btn:active,
-.btn:hover {
-  border: solid 4px;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0 0 30px;
-  box-shadow: none;
-  text-decoration: none;
-  min-width: 150px;
-}
-
-.form-group .btn[disabled] {
-  opacity: 1.0;
-  cursor: default;
-  pointer-events: all;
-}
-
-.copyright {
-  display: block;
-  font-size: 11px;
-}
-
 img.logo-mark {
   width: 113px;
   height: 150px;
@@ -361,101 +332,12 @@ img.icon {
   height: 100px;
 }
 
-.required {
-  font-style: italic;
-  font-size: 14px;
-}
-
-.required.indicator {
-  position: relative;
-  padding: 0;
-  margin-left: 15px;
-}
-
-.form-group .btn {
-  margin: 12px 0px;
-}
-
-.form-control {
-  border-radius: 8px;
-  border: 0;
-  margin: 5px 0;
-  height: 45px;
-  font-size: 16px;
-  font-weight: 100;
-  width: 100%;
-  font-style: normal;
-}
-
-.required .form-control {
-  padding-right: 30px;
-}
-
-textarea.form-control {
-  resize: none;
-  height: 110px;
-}
-
-form {
-  margin-top: -10px;
-}
-
-form label {
+.copyright {
   display: block;
-  width: calc(100% + 22px);
-  max-width: none;
-  position: relative;
+  font-size: 11px;
 }
 
-.required.indicator:before,
-label.required::after {
-  content: "*";
-  font-size: 26px;
-  font-style: normal;
-  width: 20px;
-  position: absolute;
-  font-weight: 600;
-}
 
-.required.indicator:before {
-  top: -3px;
-  left: -15px;
-}
-
-label.required:after {
-  line-height: 58px;
-  right: 0;
-  top: 0;
-}
-
-::-webkit-input-placeholder {
-  font-style: italic;
-  font-weight: 100;
-}
-
-:-moz-placeholder {
-  font-style: italic;
-  font-weight: 100;
-}
-
-::-moz-placeholder {
-  font-style: italic;
-  font-weight: 100;
-}
-
-:-ms-input-placeholder {
-  font-style: italic;
-  font-weight: 100;
-}
-
-.placeholdersjs {
-  font-style: italic !important;
-  font-weight: 100;
-}
-
-.ie form {
-  display: none;
-}
 
 .tech-icon {
   height: 140px;

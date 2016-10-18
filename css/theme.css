@@ -49,38 +49,6 @@ a.back {
   color: #333333;
 }
 
-.btn,
-.btn:hover,
-.btn.active,
-.btn:active {
-  color: #FFFFFF;
-  border-color: #F7A700;
-  background-color: #F7A700;
-}
-
-.btn[disabled],
-.btn[disabled]:hover {
-  background-color: transparent;
-  color: #F7A700;
-  border-color:  #F7A700;
-  background-color: transparent;
-}
-
-.btn.error,
-.btn.error:hover {
-  color: #FFFFFF;
-  background-color: #DC4242;
-  border-color: #DC4242;
-}
-
-.btn.success,
-.btn.success:hover {
-  color: #FFFFFF;
-  background-color: #4BB324;
-  border-color: #4BB324;
-  cursor: default;
-}
-
 
 .glyphicon {
   color: #333333;

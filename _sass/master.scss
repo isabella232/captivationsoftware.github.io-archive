@@ -8,15 +8,74 @@ body {
   font-family: "Proxima Nova", Arial, sans-serif !important;
   font-size: 18px;
   background-color: #eee;
+  overflow-x: hidden;
 }
 
 .page {
   overflow: hidden;
+  min-height: 100%;
+}
 
-  .btn {
-    
-    &:active {
-      box-shadow: none;
-    }
+h1 {
+  color: #f7a700;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+}
+
+h2 + p,
+h3 + p,
+h3 + ul,
+h4 + p,
+h4 + ul {
+  margin-bottom: 15px;
+  padding: 2px 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #e97200;
+  text-decoration: underline;
+}
+
+p, ul li {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.tech-icon {
+  height: 140px;
+  margin: 20px auto;
+  text-align: center;
+
+  img {
+    max-height: 100%;
+    max-width: 90px;
+    width: auto;
+    margin: 25px 0;
+  }
+}
+
+
+.btn {
+  &:active {
+    box-shadow: none;
   }
 }
