@@ -19,20 +19,22 @@ ul.menu {
 
     &> ul.menu {
       position: absolute;
-      left: 9%;
+      left: -50%;
       top: 72px;
-      width: 100%;
-      padding: 15px 0 15px;
+      width: 200%;
+      padding: 15px 0;
       visibility: hidden;
       transition-property: visibility;
       transition-delay: 0.3s;
+      text-align: center;
+      margin-left: -60px;
 
       &> li {
         line-height: 40px;
         padding: 0 20px;
         position: relative;
-        width: 21%;
         font-size: 14px;
+        text-align: left;
 
         &> .btn {
           font-weight: 600;
@@ -42,8 +44,8 @@ ul.menu {
           left: 0;
           top: 30px;
           margin-top: 0;
-          margin-left: 0;
           padding-top: 0;
+          margin-left: 0;
 
           li {
             line-height: 25px;
