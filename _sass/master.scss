@@ -73,6 +73,12 @@ p, ul li {
   }
 }
 
+section {
+  background: rgba(255, 255, 255, 0.33) none repeat scroll 0 0;
+  margin: 0 0 30px;
+  min-height: 200px;
+  padding: 10px 15px;
+}
 
 .btn {
   &:active {
