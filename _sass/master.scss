@@ -90,6 +90,17 @@ section {
   }
 }
 
+.breadcrumb {
+  margin: 15px 0 0;
+  padding: 0;
+  background: none;
+  font-size: 14px;
+
+  li, li > a {
+    color: #444;
+  }
+}
+
 .btn {
   &:active {
     box-shadow: none;
