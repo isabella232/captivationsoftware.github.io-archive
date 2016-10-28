@@ -78,15 +78,19 @@ p, ul li {
 section {
   background: rgba(255, 255, 255, 0.33) none repeat scroll 0 0;
   border: 1px solid #f6f6f6;
-  margin: 0 0 30px;
+  margin: 0 0 25px;
   padding: 10px 15px;
 
   h4 {
     margin-bottom: 10px;
   }
 
-  p {
+  p, a {
     font-size: 16px;
+  }
+
+  p {
+    margin-bottom: 5px;
   }
 }
 
