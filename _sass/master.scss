@@ -25,10 +25,12 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 200;
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 h3 {
+  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -56,7 +58,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 p, ul li {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 100;
 }
 
@@ -75,9 +77,17 @@ p, ul li {
 
 section {
   background: rgba(255, 255, 255, 0.33) none repeat scroll 0 0;
+  border: 1px solid #f6f6f6;
   margin: 0 0 30px;
-  min-height: 200px;
   padding: 10px 15px;
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 .btn {

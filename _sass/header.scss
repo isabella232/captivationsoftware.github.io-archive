@@ -39,7 +39,7 @@
   .menu:first-child > li > .menu::after, .mobile-menu::after {
     background-color: rgba(51,51,51,0.96);
     content: " ";
-    min-height: 220px;
+    min-height: 190px;
     position: absolute;
     left: -300%;
     right: -300%;
@@ -51,7 +51,7 @@
 
   .mobile-menu {
     padding-top: 10px;
-    
+
     .list-inline li {
       display: block;
       text-align: center;
