@@ -6,14 +6,21 @@ layout: master
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          {% if page.breadcrumbs %}
-            <ol class="breadcrumb">
-              {% for breadcrumb in page.breadcrumbs %}
-                <li><a href="{{ breadcrumb[1] }}">{{ breadcrumb[0] }}</a></li>
-              {% endfor %}
-              <li class="active">{{ page.heading }}</li>
+            <ol class="breadcrumb hidden-xs">
+              <li><a href="/">Home</a></li>
+                {% assign breadcrumbs = page.dir | split: '/' %}
+                {% assign last = '/' %}
+                {% for breadcrumb in breadcrumbs offset: 1 %}
+                  {% capture path %}{{ last }}{{ breadcrumb }}/{% endcapture %}
+                  {% assign title = site.data.links[path] %}
+                  {% if path == page.dir %}
+                    <li class="active">{{ title }}</li>
+                  {% else %}
+                    <li><a href="{{ path }}">{{ title }}</a></li>
+                  {% endif %}
+                  {% assign last = path %}
+                {% endfor %}
             </ol>
-          {% endif %}
           <h1>{{ page.heading }}</h1>
           <h2>{{ page.subheading }}</h2>
           {{ content }}

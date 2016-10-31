@@ -1,42 +1,42 @@
 <ul class="menu list-unstyled list-inline">
   <li>
-    <a href="/services/" class="btn">Our Services</span></a>
+    {% include link.html href="/services/" %}
     <ul class="menu list-unstyled list-inline hidden-xs hidden-sm">
       <li>
-        <a href="/services/software-engineering" class="btn">Software Engineering</a>
+        {% include link.html href="/services/software-engineering/" %}
         <ul class="menu list-unstyled">
-          <li><a class="btn" href="javascript:alert('fixme')">Agile Management</a></li>
-          <li><a class="btn" href="javascript:alert('fixme')">Domain Modeling</a></li>
-          <li><a class="btn" href="javascript:alert('fixme')">System Integrations</a></li>
+          <li>{% include link.html href="/services/software-engineering/agile-management/" %}</li>
+          <li>{% include link.html href="/services/software-engineering/domain-modeling/" %}</li>
+          <li>{% include link.html href="/services/software-engineering/system-integrations/" %}</li>
         </ul>
       </li>
       <li>
-        <a href="/services/application-development" class="btn">Application Development</a>
+        {% include link.html href="/services/application-development/" %}
         <ul class="menu list-unstyled">
-          <li><a class="btn" href="javascript:alert('fixme')">Web Services and APIs</a></li>
-          <li><a class="btn" href="javascript:alert('fixme')">Real-Time Applications</a></li>
-          <li><a class="btn" href="javascript:alert('fixme')">Data Processing</a></li>
+          <li>{% include link.html href="/services/application-development/web-services-and-apis/" %}</li>
+          <li>{% include link.html href="/services/application-development/realtime-applications/" %}</li>
+          <li>{% include link.html href="/services/application-development/data-processing/" %}</li>
         </ul>
       </li>
       <li>
-        <a href="/services/user-interfaces" class="btn">User Interfaces</a>
+        {% include link.html href="/services/user-interfaces/" %}
         <ul class="menu list-unstyled">
-          <li><a class="btn" href="javascript:alert('fixme')">Responsive Design</a></li>
-          <li><a class="btn" href="javascript:alert('fixme')">Data Visualization</a></li>
-          <li><a class="btn" href="javascript:alert('fixme')">Browser Compatibility</a></li>
+          <li>{% include link.html href="/services/user-interfaces/responsive-design/" %}</li>
+          <li>{% include link.html href="/services/user-interfaces/data-visualizations/" %}</li>
+          <li>{% include link.html href="/services/user-interfaces/browser-compatibility/" %}</li>
         </ul>
       </li>
       <li>
-        <a href="/services/devops" class="btn">DevOps</a>
+        {% include link.html href="/services/devops/" %}
         <ul class="menu list-unstyled">
-          <li><a class="btn" href="javascript:alert('fixme')">Server Automation</a></li>
-          <li><a class="btn" href="javascript:alert('fixme')">App Containerization</a></li>
-          <li><a class="btn" href="javascript:alert('fixme')">Cloud Deployments</a></li>
+          <li>{% include link.html href="/services/devops/server-automation/" %}</li>
+          <li>{% include link.html href="/services/devops/application-clustering/" %}</li>
+          <li>{% include link.html href="/services/devops/cloud-deployments/" %}</li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><a href="/jobs/" class="btn">Job Opportunities</a></li>
-  <li><a href="/company/" class="btn">Company Info</a></li>
-  <li><a href="/contact/" class="btn">Contact Us</a></li>
+  <li>{% include link.html href="/jobs/" %}</li>
+  <li>{% include link.html href="/company/" %}</li>
+  <li>{% include link.html href="/contact/" %}</li>
 </ul>
