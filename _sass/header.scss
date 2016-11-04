@@ -24,7 +24,7 @@
     }
   }
 
-  &::before {
+  &:before {
     content: ' ';
     background-color: #333;
     transform: rotate(-1deg);
@@ -36,7 +36,7 @@
     height: 500px;
   }
 
-  .menu:first-child > li > .menu::after, .mobile-menu::after {
+  .menu:first-child > li > .menu:after, .mobile-menu:after {
     background-color: rgba(51,51,51,0.96);
     content: " ";
     min-height: 190px;
@@ -57,7 +57,7 @@
       text-align: center;
     }
 
-    &::after {
+    &:after {
       min-height: 380px;
     }
   }

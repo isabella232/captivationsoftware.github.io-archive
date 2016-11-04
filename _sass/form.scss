@@ -86,7 +86,7 @@ form {
   }
 
   .required.indicator:before,
-  label.required::after {
+  label.required:after {
     color: #f7a700;
     content: "*";
     font-size: 26px;
