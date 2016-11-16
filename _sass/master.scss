@@ -75,9 +75,15 @@ p, ul li {
   }
 }
 
+.sidenote h2 {
+  border-bottom: dotted 1px #666;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 section {
   background: rgba(255, 255, 255, 0.33) none repeat scroll 0 0;
-  border: 1px solid #f6f6f6;
+  border: 1px solid #ddd;
   margin: 0 0 25px;
   padding: 10px 15px;
 
