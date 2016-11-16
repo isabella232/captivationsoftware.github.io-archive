@@ -39,9 +39,9 @@
 
   &+ *:before {
     background-color: #eee;
-    bottom: -12vh;
+    top: -40px;
     content: " ";
-    height: 10vh;
+    height: 80px;
     left: -1%;
     position: absolute;
     transform: rotate(1deg);
@@ -91,6 +91,7 @@
 }
 
 .landing + * {
+  position: relative;
   padding-top: 15px;
 }
 
