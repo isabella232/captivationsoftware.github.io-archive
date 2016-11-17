@@ -13,7 +13,7 @@
   "/services/user-interfaces/data-visualizations/": "Data Visualizations",
   "/services/user-interfaces/user-experience/": "User Experience",
   "/services/devops/": "DevOps",
-  "/services/devops/server-automation/": "Server Automation",
+  "/services/devops/automated-provisioning/": "Automated Provisioning",
   "/services/devops/application-clustering/": "Application Clustering",
   "/services/devops/cloud-deployments/": "Cloud Deployments",
   "/jobs/": "Job Opportunities",
