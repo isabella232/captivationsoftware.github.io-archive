@@ -75,6 +75,11 @@ p, ul li {
   }
 }
 
+.small-caps {
+  text-transform: none !important;
+  font-variant: small-caps !important;
+}
+
 .sidenote h2 {
   border-bottom: dotted 1px #666;
   width: 100%;

@@ -8,12 +8,11 @@
 
   &:before, &:after {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    background-position: 58% 20px;
+    background-position: 58% 40px;
+    top: -40px;
+    left: -40px;
+    width: calc(100% + 60px);
+    height: calc(100% + 60px);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,8 +31,6 @@
 
   &:after {
     background-image: url("/images/stock-short.colored.jpg");
-    animation-name: fadein;
-    animation-duration: 1s;
     z-index: 1;
   }
 
@@ -104,9 +101,4 @@
       font-size: 1.4em;
     }
   }
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
