@@ -3,7 +3,7 @@ Allow: *.css$
 Allow: *.js$
 Disallow: /cgi-bin/
 Disallow: /fonts/
-Disallow: /images/
+
 
 #Googlebot
 User-agent: Googlebot
@@ -11,4 +11,3 @@ Allow: *.css$
 Allow: *.js$
 Disallow: /cgi-bin/
 Disallow: /fonts/
-Disallow: /images/
