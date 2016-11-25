@@ -62,6 +62,24 @@ p, ul li {
   font-weight: 100;
 }
 
+.free-estimate {
+  text-align: center;
+  h4, p {
+    text-align: left;
+  }
+  .btn {
+    border: 0;
+    text-decoration: none;
+    background-color: #f7a700;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px 0;
+
+  }
+}
+
 .tech-icon {
   height: 140px;
   margin: 20px auto;
@@ -83,6 +101,7 @@ p, ul li {
 .sidenote h2 {
   border-bottom: dotted 1px #666;
   width: 100%;
+  color: #666;
   margin-bottom: 20px;
 }
 
