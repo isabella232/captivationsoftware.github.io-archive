@@ -14,4 +14,14 @@
 
 .subpage .content {
   padding: 50px 0 40px;
+
+  @media (min-width: 992px) {
+    .col-md-8 {
+      width: 62%;
+    }
+
+    .col-md-4 {
+      width: 36%;
+    }
+  }
 }

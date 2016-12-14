@@ -20,6 +20,7 @@ h1 {
   color: #f7a700;
   font-size: 30px;
   font-weight: 700;
+  margin-top: 25px;
 }
 
 h2 {
@@ -64,9 +65,17 @@ p, ul li {
 
 .free-estimate {
   text-align: center;
-  h4, p {
-    text-align: left;
+  border: 0;
+  background: none;
+
+  img {
+    width: 30%;
+    max-width: 100px;
+    margin: 10px 1%;
+    height: auto;
+    display: inline-block;
   }
+
   .btn {
     border: 0;
     text-decoration: none;
@@ -98,6 +107,10 @@ p, ul li {
   font-variant: small-caps !important;
 }
 
+.sidenote {
+  margin-top: -15px;
+}
+
 .sidenote h2 {
   border-bottom: dotted 1px #666;
   width: 100%;
@@ -125,7 +138,7 @@ section {
 }
 
 .breadcrumb {
-  margin: 15px 0 0;
+  margin: 20px 0 0;
   padding: 0;
   background: none;
   font-size: 14px;
