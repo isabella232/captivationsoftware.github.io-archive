@@ -6,23 +6,27 @@ layout: master
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-            <ol class="breadcrumb hidden-xs">
-              <li><a href="/">Home</a></li>
-                {% assign breadcrumbs = page.dir | split: '/' %}
-                {% assign last = '/' %}
-                {% for breadcrumb in breadcrumbs offset: 1 %}
-                  {% capture path %}{{ last }}{{ breadcrumb }}/{% endcapture %}
-                  {% assign title = site.data.links[path] %}
-                  {% if path == page.dir %}
-                    <li class="active">{{ title }}</li>
-                  {% else %}
-                    <li><a href="{{ path }}">{{ title }}</a></li>
-                  {% endif %}
-                  {% assign last = path %}
-                {% endfor %}
-            </ol>
-          <h1>{{ page.heading }}</h1>
-          <h2>{{ page.subheading }}</h2>
+          <ol class="breadcrumb hidden-xs">
+            <li><a href="/">Home</a></li>
+              {% assign breadcrumbs = page.dir | split: '/' %}
+              {% assign last = '/' %}
+              {% for breadcrumb in breadcrumbs offset: 1 %}
+                {% capture path %}{{ last }}{{ breadcrumb }}/{% endcapture %}
+                {% assign title = site.data.links[path] %}
+                {% if path == page.dir %}
+                  <li class="active">{{ title }}</li>
+                {% else %}
+                  <li><a href="{{ path }}">{{ title }}</a></li>
+                {% endif %}
+                {% assign last = path %}
+              {% endfor %}
+          </ol>
+          <div class="col-md-8 col-xs-12 pull-left">
+            <div class="row">
+              <h1>{{ page.heading }}</h1>
+              <h2>{{ page.subheading }}</h2>
+            </div>
+          </div>
           {{ content }}
         </div>
       </div>
