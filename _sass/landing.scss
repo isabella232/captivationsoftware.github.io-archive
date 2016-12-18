@@ -66,14 +66,17 @@
 
     h1 {
       font-weight: 900;
-      font-size: 1.9em;
+      font-size: 2.2em;
+      text-shadow: 0 0 4px #966d26;
+
     }
 
     h2 {
       display: inline-block;
-      font-size: 0.7em;
+      font-size: 1em;
       font-weight: 400;
       margin: 10px 0 20px;
+      text-shadow: 0 0 3px #966d26;
     }
   }
 
@@ -95,10 +98,10 @@
 @media(max-width: 991px) {
   .landing .hero {
     h1 {
-      font-size: 2.2em;
+      font-size: 1.4em;
     }
     h2 {
-      font-size: 1.4em;
+      font-size: 1em;
     }
   }
 }
