@@ -1,5 +1,8 @@
 form {
   margin-top: -10px;
+  width: calc(100% + 15px);
+  margin-left: -15px;
+
 
   .form-group {
     .btn,
@@ -80,7 +83,7 @@ form {
 
   label {
     display: block;
-    width: calc(100% + 22px);
+    width: calc(100% + 15px);
     max-width: none;
     position: relative;
   }
