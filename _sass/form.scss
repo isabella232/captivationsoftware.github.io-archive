@@ -134,6 +134,14 @@ form {
 
 }
 
+.ie-only {
+  display: none;
+}
+
+.ie .ie-only {
+  display: block;
+}
+
 .ie form {
   display: none;
 }
