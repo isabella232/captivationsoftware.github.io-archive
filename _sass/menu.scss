@@ -5,7 +5,8 @@ ul.menu {
       text-decoration: none;
       font-weight: 400;
       line-height: 58px;
-      margin-top: -5px;
+      padding-top: 0;
+      margin-top: -2px;
 
       &:active, &:link, &:visited {
         color: #fff;
@@ -49,6 +50,7 @@ ul.menu {
           font-weight: 600;
           line-height: normal;
           text-shadow: 0px 1px 1px #111;
+          margin-bottom: 5px;
         }
 
         &> ul.menu {
